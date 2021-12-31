@@ -1,0 +1,493 @@
+ClientInstance:
+ptrChainCount:3[[["Minecraft.Windows.exe"+040A4B88]+10]+128]+0
+CIOLocalPlayer:138
+
+//very similar structure to lp struct so just use those offsets
+//to cycle through first offset goes from 0 to 19F8 and then second offset switches to 8 and then first again goes from 0 to 19F8
+EntityDataStructure:
+ptrChainCount:4[[[["Minecraft.Windows.exe"+04145788]+00]+00]+20]+C8
+
+//same shit as EDS except the first two offsets don't change, they stay as 0 and 8
+EntityProjectilePriority:
+ptrChainCount:4[[[["Minecraft.Windows.exe"+04145788]+00]+08]+20]+C8
+
+LocalPlayer:
+LPOEntityID:10
+LPOYaw1:140
+LPOPitch1:144
+LPOYaw2:148
+LPOPitch2:14C
+LPOFallDistance:1DC
+LPOOnGround:1E0
+LPOMoveObstructed:1E2
+LPOInGroundDepth:234
+LPOStepHeight:240
+LPOWebSpeedX:254
+LPOWebSpeedY:258
+LPOWebSpeedZ:25C
+LPOXZDistanceTraveledSinceRespawn:260
+LPOImmobile:264
+LPOInWater:265
+LPOSplashing:266
+LPOUnderWater:267
+LPOTicksAlive:2B0
+LPOHotFeet:2D0
+LPOOnFire:2D1
+LPORiding:33D
+LPOMultiPlayerLevel:378
+LPOPersonaPointer:388
+LPONamespace:3F0
+LPONamespaceLength:400
+LPOTypeName:410
+LPOTypeNameLength:420
+LPOX1:4D0
+LPOY1:4D4
+LPOZ1:4D8
+LPOX2:4DC
+LPOY2:4E0
+LPOZ2:4E4
+LPOHitboxWidth:4EC
+LPOHitboxHeight:4F0
+LPOX3:4F4
+LPOY3:4F8
+LPOZ3:4FC
+LPOX4:500
+LPOY4:504
+LPOZ4:508
+LPOXVelocity:50C
+LPOYVelocity:510
+LPOZVelocity:514
+LPOSimplePlayerContainer:670
+LPOLegsInBlock:698
+LPOHeadInBlock:6A0
+LPOBreath:6A4
+LPOFishing:70C
+LPOCompass:728
+LPODamageTime:730
+LPOHandAnimationTime:794
+LPOPerformingHandAnimation:7A0
+LPOHandAnimationFrame:7A4
+LPOJumping:7AC
+LPOLeapVelocity:7B8
+LPOTicksDead:7C0
+LPOLastJumpedX:824
+LPOLastJumpedY:828
+LPOLastJumpedZ:82C
+LPOWalkSpeed:830
+LPOName:920
+LPONameLength:930
+LPOFlying:9C0
+LPOCanFly:9CC
+LPOFlySpeed:9F0
+LPOFOV:9FC
+LPOPlayerInventory:C88
+LPOInvTypeOpen:11E0
+LPOSleeping:1DE0
+LPOMining:1DE2
+LPOGameMode:1E0C
+LPOHoldItem:2270
+LPOHoldItemTags:2278
+LPOHoldItemTileInfo:2280
+LPOHoldItemVariant:2288
+LPOHoldItemCount:228A
+
+TileInfoStructure:
+TISOTileInfo2:10
+
+TileInfo2Structure:
+TI2SOTileNamespaceName:08
+TI2SOTileNamespaceNameLength:18
+TI2SOTileName:30
+TI2SOTileNameLength:40
+TI2SOTileLightLevel:118
+TI2SOTileID:14C
+TI2SOTileDepthX:234
+TI2SOTileDepthY:238
+TI2SOTileDepthZ:23C
+
+LPOCraftingContainerManagerModel:08
+LPOHoldItemID:08
+LPOInventoryTransactionManagerPtr:08
+
+HoldItem:
+HIItem:0
+
+HoldItemTags:
+HITTagsInfo:08
+
+TagsInfo:
+TIOTag1:0
+TIOTag2:08
+TIOTag3:10
+
+Tag3:
+T3OTag3TypeName:20
+T3OTag3TypeNameLength:30
+T3OTag3Info:48
+
+Tag3Info:
+T3IOEnchantLevel:08
+T3IONameInfo:10
+
+T3INameInfo:
+T3INIOTypeName:20
+T3INIOTypeNameLength:30
+T3INIOName:48
+T3INIONameLength:58
+
+MultiPlayerLevel:
+MPLOPLBlockEntAir:980
+MPLOPLFaceSide:984
+MPLOPLBlockX:988
+MPLOPLBlockY:98C
+MPLOPLBlockZ:990
+MPLOPLX:994
+MPLOPLY:998
+MPLOPLZ:99C
+MPLOPLEntID:9B0
+MPLOPLLiquid:A28
+
+SimplePlayerContainer:
+SPCOEquipsItemStack:E8
+
+EquipsItemStack:
+EISOHelmSlot:8
+EISOCompoundTag:10
+EISOTypePads:20
+EISOCountPads:22
+EISOPads:90
+
+EISOHelmSlot:
+HSEquipsItem:0
+
+EquipsItem:
+EIOTypeName:50
+EIOTypeNameLength:60
+EIOEquipName:A8
+EIOEquipNameLength:B8
+EIOMaxDurability:120
+EIOAttackDamage:228
+EIOProtectionLevel:22C
+
+PlayerInventory:
+PIOSelectedSlot:10
+PIOInventory:B0
+
+Inventory:
+IOInventoryItemStack:E0
+
+InventoryItemStack:
+IISOPads:90
+IISOSlot0:8
+IISOSlotItemCompoundTagPads:08
+IISOSlotItemTileInfoPads:10
+IISOSlotItemTypePads:20
+IISOSlotItemCountPads:22
+
+SlotItems:
+SIOTypeName:50
+SIOTypeNameLength:60
+SIOItemName:A8
+SIOItemNameLength:B8
+SIOMaxDurability:120
+SIOAttackDamage:228
+SIOProtectionLevel:22C
+
+1.17.11
+AirJump:88 90 E0 01 00 00 C3
+alloc:C7 80 E0010000 01000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+AirSwim:
+numhackaddies:2
+InWater:88 87 65 02 00 00
+alloc:C7 87 65020000 01000000 jmpret
+numnops:1
+nopsequence:nop
+UnderWater:88 87 67 02 00 00
+alloc:C7 87 67020000 01000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+AntiKB:
+numhackaddies:3
+LPVelXOnHit:89 81 0C 05 00 00 8B 42
+directedit:90 90 90 90 90 90
+LPVelYOnHit:89 81 0C 05 00 00 8B 42 +09
+directedit:90 90 90 90 90 90
+LPVelZOnHit:89 81 0C 05 00 00 8B 42 +18
+directedit:90 90 90 90 90 90
+
+1.17.11
+AutoAttack:83 FF 01 75 69 40 +02
+directedit:00
+
+1.17.11
+AutoFastPlace:41 83 FE 01 75 68 +03
+directedit:00
+
+1.17.11
+AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF FF ?? ?? ?? 00 00 84 C0 0F84 ??000000 48 8B 07 41 B0 01 BA 46000000 48 8B CF
+alloc:C6 46 48 01 0F84 +2579EB1] jmpret
+numnops:5
+nopsequence:nop 5
+
+1.17.11
+//Once these are set, set a multiplier for boat xyz velocity, also check LPRiding true or false
+BoatFly:
+numhackaddies:2
+OnGround:88 90 E0 01 00 00 C3
+directedit:90 90 90 90 90 90
+FallDistanceOnDownFall:F3 0F 11 83 DC 01 00 00 EB
+directedit:90 90 90 90 90 90 90 90
+
+1.17.11
+Builder:
+numhackaddies:4
+MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2
+directedit:90 90 90 90 90
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2 +08
+directedit:90 90 90
+MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 E2
+alloc:C7 41 18 00000000 0FB6 42 1C jmpret
+numnops:2
+nopsequence:nop 2
+MPLPLBlockEntAirFarCheck:C7 40 18 03 00 00 00 48 8B
+alloc:C7 40 18 00000000 jmpret
+numnops:2
+nopsequence:nop 2
+
+1.17.11
+//Just check chestslot for elytra wings and then set a multiplier and multiply that times xyz velocity at the hold of a hotkey
+ElytraFly:
+
+1.17.11
+FastLadder:
+numhackaddies:2
+LadderUp:C7 81 10 05 00 00 CD CC 4C 3E
+alloc:C7 81 10050000 [ladderupspeed] jmpret
+numnops:5
+nopsequence:nop 5
+LadderDown:41 C7 47 04 CD CC 4C BE 49 8B 06 49 8B CE FF 90 60 02 00 00 84 C0 74 18 49 8B 06 49 8B CE FF 50 58 84 C0 74 0B 45 0F 2F 4F 04 76 04 45 89 67 04 49
+alloc:41 C7 47 04 [ladderdownspeed] jmpret
+numnops:3
+nopsequence:nop 3
+
+1.17.11
+FastPlace:80 7B 51 00 74 73 +03
+directedit:01
+
+1.17.11
+//different modes, by default just set LPCanFly to 1
+//otherwise to functionHookMode on LPFlying which is what this script will be for
+FlyMod:80 B8 C0 09 00 00 00 75 12 80 B8 1C 0A 00 00 01 74 0C
+alloc:80 B8 C0 09 00 00 01
+numnops:2
+nopsequence:nop 2
+
+1.17.11
+//rbx+390,394,398 is x,y,z respectively
+//the first addy extracts rbx in the newmem
+//to access it read newmemaddy+0x0E into uintptr
+//then add the offsets to that uintptr and read as floats
+FreeCam:
+numhackaddies:3
+FCOCamX:390
+FCOCamY:394
+FCOCamZ:398
+CamXWriter:F3 0F11 B3 ?? ?? 00 00  0FB6 44 24 ?? F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00
+alloc:48 89 1D 07 00 00 00 jmpret
+numnops:3
+nopsequence:nop 3
+CamYWriter:F3 0F11 B3 ?? ?? 00 00  0FB6 44 24 ?? F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 +19
+directedit:90 90 90 90 90 90 90 90
+CamZWriter:F3 0F11 B3 ?? ?? 00 00  0FB6 44 24 ?? F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 +33
+directedit:90 90 90 90 90 90 90 90
+
+1.17.11
+FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 25 00 00 00
+alloc:C7 42 18 00007A44 F3 0F10 42 18 jmpret
+numnops:0
+nopsequence:nan
+
+1.17.11
+//alternatively just set LPVelY to jumpheight
+HighJump:F3 0F 11 43 1C FF
+alloc:C7 43 1C [jumpheight] jmpret
+numnops:0
+nopsequence:nan
+
+1.17.11
+//adjustable hit reach. static address. just set value via memcpy(hitreachAddress,&hitreachmodifier,sizeof(DWORD))
+HitReach:00 00 40 40 DB 0F
+directedit:[hitreachmodifier]
+
+1.17.11
+//to find just search Minecraft.Windows.exe module for 5.700000000 it's a static address and should pop up with only one result on first scan
+//adjustable block reach. static address. just set value via memcpy(blockreachAddress,&blockreachmodifier,sizeof(DWORD))
+BlockReach:66 66 B6 40 00 00
+directedit:[blockreachmodifier]
+
+1.17.11
+Hitbox:
+numhackaddies:2
+HBWidth:CC F3 0F 10 81 EC 04 00 00 C3 +01
+alloc:C7 81 EC040000 [hbwidth] jmpret
+numnops:3
+nopsequence:nop 3
+HBHeight:F3 0F 58 8B F0 04 00 00
+alloc:C7 81 F0040000 [hbheight] jmpret
+numnops:3
+nopsequence:nop 3
+
+1.17.11
+//Just set LPGameMode to 1
+HRIB:
+
+1.17.11
+InstantBreak:F3 0F 11 4B 24 33
+alloc:C7 43 24 [blockbreaktime] jmpret
+numnops:0
+nopsequence:nan
+
+1.17.11
+Jetpack:
+numhackaddies:2
+LPFlyingWriter:0F B6 40 ?? C3 CC CC CC CC CC CC CC CC CC 4C 8B 49
+directedit:90 90 90 90
+LeapVelocityWriter:F3 0F 11 88 B8 07 00 00 C3
+directedit:90 90 90 90 90 90 90 90
+
+1.17.11
+//used for ClickGUI and sheezy; gives you control of the mouse even when escape menu or inventory or anything is not open
+MouseControl:00 75 16 48 8B CB E8 ?? ?? ?? ?? 84 C0
+directedit:01
+
+1.17.11
+MPLPLBlockControl:
+numhackaddies:2
+MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2
+directedit:90 90 90 90 90
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2 +08
+directedit:90 90 90
+
+1.17.11
+NoBadOmen:44 39 3C 06 74 15
+alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+//must be blinded once first per game session or else it crashes
+NoBlind:39 02 75 04 48 89 7D 90
+alloc:C7 02 00000000 0F85 +138B5B2] 48 89 7D 90 jmpret
+numnops:3
+nopsequence:nop 3
+
+1.17.11
+//must be levitated once first per game session or else it crashes
+NoLevitate:39 01 75 02 33 C9 48 85 C9 0F 95 C0 C3 CC CC CC CC CC CC CC
+alloc:C7 01 00000000 0F85 +1CFC52F] 31 C9 jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+NoNausea:39 01 74 05 48 85 C9 75 34
+alloc:C7 01 00000000 0F84 +13555C4] 48 85 C9 jmpret
+numnops:2
+nopsequence:nop 2
+
+1.17.11
+NoSlowFall:44 39 3C 06 74 15
+alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+NoWater:
+numhackaddies:2
+InWater:88 87 65 02 00 00
+alloc:C7 87 65020000 00000000 jmpret
+numnops:1
+nopsequence:nop
+UnderWater:88 87 67 02 00 00
+alloc:C7 87 67020000 00000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+NoWeb:0F 2E 0D ?? DB 40 02 75 44 F3 0F 10 05
+directedit:90 90 90 90 90 90 90
+
+1.17.11
+RapidHit:00 74 73 85 FF 0F
+directedit:01
+
+1.17.11
+Scaffold:88 41 ?? F2 0F 10 42 ?? F2 0F 11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 ?? ?? ?? ?? 0F B6 43 ??
+directedit:90 90 90
+
+1.17.11
+Speedy:06 00 00 F3 0F 10 80 84 00 00 00 48 83 C4 28 +03
+alloc:C7 80 84000000 [walkspeed] jmpret
+numnops:3
+nopsequence:nop 3
+
+1.17.11
+WaterBob:F3 41 0F 11 4F 04 F3 41 0F 59
+alloc:41 C7 47 04 [watervelyspeed] jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+//just press a hotkey to make a waypoint by storing
+//LPXYZ 1&2(24bytes)
+Waypoints:
+
+1.17.11
+WebFloat:F3 0F 11 48 1C F3 0F 10 05 ? ? ? ? F3 0F 11 40 20 48 8B 06 48 8D
+alloc:C7 40 1C [webvelyspeed] jmpret
+numnops:0
+nopsequence:nan
+
+1.17.11
+//for zoomx2 also change LPFOV
+Zoom:F3 0F 10 48 ?? F3 0F 10 78 ?? F3 0F 10 40 ??
+directedit:90 90 90 90 90
+
+//registry extractions area:
+
+1.17.11
+ExtractHealthHunger:
+numhackaddies:2
+ExtractHealth:F3 0F 2C 88 84 00 00 00 85 C9 7F 4E
+alloc:F3 0F2C 88 84000000 89 0D 32000000 jmpret
+numnops:3
+nopsequence:nop 3
+ExtractHunger:8B 88 ?? 00 00 00 89 4F ??
+alloc:8B 88 84000000 89 0D 29000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.17.11
+ExtractSoundListener:0F 11 06 41 0F 10 4E ?? 0F 11 4E ?? 4C 89 7B D8
+alloc:0F11 06 41 0F10 4E 10 48 89 35 21000000 jmpret
+numnops:3
+nopsequence:nop 3
+
+1.17.11
+//r13(reg extraction) + 0x60 byte value != 0 means chat is open
+ExtractChatOpen:41 89 7D ?? 45 88 A5 ?? ?? 00 00
+alloc:41 89 7D 60 45 88 A5 3C010000 4C 89 2D 1E000000 jmpret
+numnops:6
+nopsequence:nop 6
+
+1.17.11
+//
+ExtractAirTile:48 8B 01 4D 8B C4 48 89 54 24 ?? 49 8D 94 24 ?? 00 00 00
+alloc:48 8B 01 48 89 0D 26000000 4D 8B C4 jmpret
+numnops:1
+nopsequence:nop
