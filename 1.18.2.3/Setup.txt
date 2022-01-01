@@ -94,7 +94,7 @@ LPOHoldItemCount:2292
 TileStructure: 
 Tile:10
 
-Tile: 
+TileDetails: 
 TileTypeName:8
 TileTypeNameLength:18
 TileName:30
