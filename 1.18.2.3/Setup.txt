@@ -13,10 +13,10 @@ ptrChainCount:0[[[["Minecraft.Windows.exe"+00000000]+0]+0]+0]+0
 
 LocalPlayer:
 LPOEntityID:10
-LPOYaw1:138
-LPOPitch1:13C
-LPOYaw2:140
-LPOPitch2:144
+LPOPitch1:138
+LPOYaw1:13C
+LPOPitch2:140
+LPOYaw2:144
 LPOFallDistance:1D4
 LPOOnGround:1D8
 LPOMoveObstructed:1DA
