@@ -204,14 +204,8 @@ nopsequence:nop
 UnderWater:88 86 5F 02 00 00
 directedit:90 90 90 90 90 90
 
-1.17.11
-AntiKB:
-numhackaddies:3
-LPVelXOnHit:89 81 0C 05 00 00 8B 42
-directedit:90 90 90 90 90 90
-LPVelYOnHit:89 81 0C 05 00 00 8B 42 +09
-directedit:90 90 90 90 90 90
-LPVelZOnHit:89 81 0C 05 00 00 8B 42 +18
+1.18.2
+NoKB:FF 90 70 01 00 00 C6 47 11 01 48 8B 5C 24 30 48 83 C4 20 5F C3
 directedit:90 90 90 90 90 90
 
 1.18.2
