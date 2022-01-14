@@ -187,23 +187,22 @@ ItemMaxDurability:120
 ItemAttackDamage:228
 ItemProtectionLevel:22C
 
-1.17.11
+1.18.2
+//just write 1 to LPOnGround consistently
 AirJump:88 90 E0 01 00 00 C3
 alloc:C7 80 E0010000 01000000 jmpret
 numnops:1
 nopsequence:nop
 
-1.17.11
+1.18.2
 AirSwim:
 numhackaddies:2
-InWater:88 87 65 02 00 00
-alloc:C7 87 65020000 01000000 jmpret
+InWater:88 86 5D 02 00 00
+alloc:C7 86 5D020000 01000000 C7 86 5F020000 01000000 jmpret
 numnops:1
 nopsequence:nop
-UnderWater:88 87 67 02 00 00
-alloc:C7 87 67020000 01000000 jmpret
-numnops:1
-nopsequence:nop
+UnderWater:88 86 5F 02 00 00
+directedit:90 90 90 90 90 90
 
 1.17.11
 AntiKB:
@@ -215,17 +214,17 @@ directedit:90 90 90 90 90 90
 LPVelZOnHit:89 81 0C 05 00 00 8B 42 +18
 directedit:90 90 90 90 90 90
 
-1.17.11
+1.18.2
 AutoAttack:83 FF 01 75 69 40 +02
 directedit:00
 
-1.17.11
-AutoFastPlace:41 83 FE 01 75 68 +03
+1.18.2
+AutoPlace:41 83 FE 01 75 68 +03
 directedit:00
 
-1.17.11
+1.18.2
 AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF FF ?? ?? ?? 00 00 84 C0 0F84 ??000000 48 8B 07 41 B0 01 BA 46000000 48 8B CF
-alloc:C6 46 48 01 0F84 +2579EB1] jmpret
+alloc:C6 46 48 01 0F84 +270729E] jmpret
 numnops:5
 nopsequence:nop 5
 
