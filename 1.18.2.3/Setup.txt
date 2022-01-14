@@ -216,9 +216,7 @@ directedit:00
 
 1.18.2
 AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF FF ?? ?? ?? 00 00 84 C0 0F84 ??000000 48 8B 07 41 B0 01 BA 46000000 48 8B CF
-alloc:C6 46 48 01 0F84 +270729E] jmpret
-numnops:5
-nopsequence:nop 5
+directedit:C6 46 48 01
 
 1.18.2
 //Once these are set, set a multiplier for boat xyz velocity, also check LPRiding true or false
