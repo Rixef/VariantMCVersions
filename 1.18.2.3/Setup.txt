@@ -257,7 +257,7 @@ directedit:41 C7 45 04 [ladderdownspeed]
 FastPlace:80 7B 51 00 74 73 +03
 directedit:01
 
-1.17.11
+1.18.2
 //different modes, by default just set LPCanFly to 1
 //otherwise to functionHookMode on LPFlying which is what this script will be for
 FlyMod:80 B8 C0 09 00 00 00 75 12 80 B8 1C 0A 00 00 01 74 0C
@@ -265,10 +265,10 @@ alloc:80 B8 C0 09 00 00 01
 numnops:2
 nopsequence:nop 2
 
-1.17.11
+1.18.2
 //rbx+390,394,398 is x,y,z respectively
 //the first addy extracts rbx in the newmem
-//to access it read newmemaddy+0x0E into uintptr
+//to access it read newmemaddy+0x64 into uintptr
 //then add the offsets to that uintptr and read as floats
 FreeCam:
 nummodaddies:3
@@ -276,7 +276,7 @@ FCOCamX:390
 FCOCamY:394
 FCOCamZ:398
 CamXWriter:F3 0F11 B3 ?? ?? 00 00  0FB6 44 24 ?? F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00
-alloc:48 89 1D 07 00 00 00 jmpret
+alloc:48 89 1D 5D 00 00 00 jmpret
 numnops:3
 nopsequence:nop 3
 CamYWriter:F3 0F11 B3 ?? ?? 00 00  0FB6 44 24 ?? F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 +19
