@@ -284,14 +284,14 @@ directedit:90 90 90 90 90 90 90 90
 CamZWriter:F3 0F11 B3 ?? ?? 00 00  0FB6 44 24 ?? F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 F3 0F10 74 24 ?? F3 0F11 B3 ?? ?? 00 00 +33
 directedit:90 90 90 90 90 90 90 90
 
-1.17.11
+1.18.2
 FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 25 00 00 00
-alloc:C7 42 18 00007A44 F3 0F10 42 18 jmpret
+alloc:F3 0F10 42 18 C7 42 18 00007A44 jmpret
 numnops:0
 nopsequence:nan
 
-1.17.11
-//alternatively just set LPVelY to jumpheight
+1.18.2
+//alternatively just set LPVelY to jumpheight(currently just using this method)
 HighJump:F3 0F 11 43 1C FF
 alloc:C7 43 1C [jumpheight] jmpret
 numnops:0
