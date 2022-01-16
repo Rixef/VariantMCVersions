@@ -308,15 +308,16 @@ directedit:[hitreachmodifier]
 BlockReach:66 66 B6 40
 directedit:[blockreachmodifier]
 
-1.17.11
+1.18.2
+//just iterate through entity list and set any hibwidth/heights instead
 Hitbox:
 nummodaddies:2
-HBWidth:CC F3 0F 10 81 EC 04 00 00 C3 +01
-alloc:C7 81 EC040000 [hbwidth] jmpret
+HBWidth:CC F3 0F 10 81 ?? 04 00 00 C3 +01
+alloc:C7 81 D0040000 [hbwidth] jmpret
 numnops:3
 nopsequence:nop 3
-HBHeight:F3 0F 58 8B F0 04 00 00
-alloc:C7 81 F0040000 [hbheight] jmpret
+HBHeight:F3 0F 58 8B ?? 04 00 00 F3 0F 10 10
+alloc:C7 81 D4040000 [hbheight] jmpret
 numnops:3
 nopsequence:nop 3
 
