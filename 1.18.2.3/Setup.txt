@@ -309,7 +309,7 @@ BlockReach:66 66 B6 40
 directedit:[blockreachmodifier]
 
 1.18.2
-//just iterate through entity list and set any hibwidth/heights instead
+//just iterate through entity list and set any hbwidth/heights instead
 Hitbox:
 nummodaddies:2
 HBWidth:CC F3 0F 10 81 ?? 04 00 00 C3 +01
@@ -321,22 +321,22 @@ alloc:C7 81 D4040000 [hbheight] jmpret
 numnops:3
 nopsequence:nop 3
 
-1.17.11
+1.18.2
 //Just set LPGameMode to 1
 HRIB:
 
-1.17.11
-InstantBreak:F3 0F 11 4B 24 33
+1.18.2
+InstantBreak:F3 0F 11 4B ?? 48 8B 45 ?? 48 39 43 ?? 0F 8D ?? ?? ?? ?? 48 69 8B
 alloc:C7 43 24 [blockbreaktime] jmpret
 numnops:0
 nopsequence:nan
 
-1.17.11
+1.18.2
 Jetpack:
 nummodaddies:2
 LPFlyingWriter:0F B6 40 ?? C3 CC CC CC CC CC CC CC CC CC 4C 8B 49
 directedit:90 90 90 90
-LeapVelocityWriter:F3 0F 11 88 B8 07 00 00 C3
+LeapVelocityWriter:F3 0F 11 88 ?? 07 00 00 C3 CC CC CC 48 8B 41 ?? F3 0F 10 80 ?? ?? 00 00 C3 CC CC CC 48 83
 directedit:90 90 90 90 90 90 90 90
 
 1.17.11
