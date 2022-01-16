@@ -358,43 +358,38 @@ alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
 numnops:1
 nopsequence:nop
 
-1.17.11
-//must be blinded once first per game session or else it crashes
-NoBlind:39 02 75 04 48 89 7D 90
-alloc:C7 02 00000000 0F85 +138B5B2] 48 89 7D 90 jmpret
+1.18.2
+NoBlind:39 01 0F84 ????0000 48 85 C9 0F84 ????0000 48 8B 8B ?? ?? 00 00
+alloc:C7 01 00000000 39 01 0F84 34EA2901 jmpret
 numnops:3
 nopsequence:nop 3
 
-1.17.11
-//must be levitated once first per game session or else it crashes
-NoLevitate:39 01 75 02 33 C9 48 85 C9 0F 95 C0 C3 CC CC CC CC CC CC CC
-alloc:C7 01 00000000 0F85 +1CFC52F] 31 C9 jmpret
-numnops:1
-nopsequence:nop
+1.18.2
+NoLevitate:43 39 04 08 4B 8D 0C 08 75 ?? 33 C9 48 85 C9 0F95 C0 C3 CC CC CC CC CC
+alloc:43 C7 04 08 0000000043 39 04 08 4B 8D 0C 08 jmpret
+numnops:3
+nopsequence:nop 3
 
-1.17.11
-NoNausea:39 01 74 05 48 85 C9 75 34
-alloc:C7 01 00000000 0F84 +13555C4] 48 85 C9 jmpret
+1.18.2
+NoNausea:39 01 74 ?? 48 85 C9 75 ?? F3 0F10 87 ????0000
+alloc:C7 01 00000000 39 01 0F84 0BA53C01 48 85 C9 jmpret
 numnops:2
 nopsequence:nop 2
 
-1.17.11
-NoSlowFall:44 39 3C 06 74 15
-alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
-numnops:1
-nopsequence:nop
+1.18.2
+NoSlowFall:39 10 74 ?? 44 38 60 ?? 75 ?? 48 83 E8 ?? 48 3B C1
+alloc:C7 00 00000000 39 10 0F84 2C7CF001 44 38 60 1B jmpret
+numnops:3
+nopsequence:nop 3
 
-1.17.11
+1.18.2
+//just nop 'em and then set LPInWater and LPUnderWater
 NoWater:
 nummodaddies:2
-InWater:88 87 65 02 00 00
-alloc:C7 87 65020000 00000000 jmpret
-numnops:1
-nopsequence:nop
-UnderWater:88 87 67 02 00 00
-alloc:C7 87 67020000 00000000 jmpret
-numnops:1
-nopsequence:nop
+NoWaterIW:88 86 5D 02 00 00
+directedit:90 90 90 90 90 90
+NoWaterUW:88 86 5F 02 00 00
+directedit:90 90 90 90 90 90
 
 1.17.11
 NoWeb:0F 2E 0D ?? DB 40 02 75 44 F3 0F 10 05
