@@ -469,6 +469,15 @@ alloc:8B 88 84000000    89 0D 4D000000 jmpret
 numnops:1
 nopsequence:nop
 
+1.18.2
+//rdi+10
+//24 = chatOpen 25 = escapeMenuOpen 29 = inventoryOpen
+//anything > 0 = a menu is open
+ExtractMenuTypeOpen:48 89 77 ?? 48 89 77 ?? 49 8B D0 48 8B CF E8 ???????? 90 49 8D 5F ?? 48 89 33
+alloc:48 89 3D 5D000000    48 89 77 10    48 89 77 18 jmpret
+numnops:3
+nopsequence:nop 3
+
 1.17.11
 ExtractSoundListener:0F 11 06 41 0F 10 4E ?? 0F 11 4E ?? 4C 89 7B D8
 alloc:0F11 06 41 0F10 4E 10 48 89 35 21000000 jmpret
