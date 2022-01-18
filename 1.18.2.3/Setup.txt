@@ -81,6 +81,9 @@ LPOCanFly:984
 LPOFlySpeed:9A8
 LPOFOV:9B4
 LPOPlayerInventory:B88
+LPOUsingItem:1000
+LPOUsingItemSlot:1004
+LPOUsingItemDurationTicks:1008
 LPOInvTypeOpen:1140
 LPOSleeping:1D54
 LPOMining:1D5C
