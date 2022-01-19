@@ -243,7 +243,7 @@ directedit:90 90 90
 MPLPLBlockEntAirFarCheck:C7 40 18 03 00 00 00 48 8B 8D
 directedit:90 90 90 90 90 90 90
 
-1.17.11
+1.18.2
 //Just check chestslot for elytra wings and then set a multiplier and multiply that times xyz velocity at the hold of a hotkey
 ElytraFly:
 
@@ -418,7 +418,7 @@ alloc:41 C7 47 04 [watervelyspeed] jmpret
 numnops:1
 nopsequence:nop
 
-1.17.11
+1.18.2
 //just press a hotkey to make a waypoint by storing
 //LPXYZ 1&2(24bytes)
 Waypoints:
