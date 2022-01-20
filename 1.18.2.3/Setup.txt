@@ -256,7 +256,7 @@ directedit:C7 81 F4040000 [ladderupspeed]
 LadderDown:41 C7 45 04 CDCC4CBE 49 8B 07 49 8B CF FF 90 ????0000 84 C0 74 18 49 8B 07 49 8B CF FF 50 60 84 C0 74 0B 45 0F2F 45 04 76 04 45 89 65 04 49 8B 07
 directedit:41 C7 45 04 [ladderdownspeed]
 
-1.17.11
+1.18.2
 FastPlace:80 7B 51 00 74 73 +03
 directedit:01
 
