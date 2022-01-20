@@ -328,9 +328,7 @@ HRIB:
 
 1.18.2
 InstantBreak:F3 0F 11 4B ?? 48 8B 45 ?? 48 39 43 ?? 0F 8D ?? ?? ?? ?? 48 69 8B
-alloc:C7 43 24 [blockbreaktime] jmpret
-numnops:0
-nopsequence:nan
+directedit:F3 0F11 73 24
 
 1.18.2
 Jetpack:
