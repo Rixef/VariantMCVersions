@@ -237,9 +237,9 @@ directedit:90 90 90 90 90 90 90 90
 //once these are set just write to MPLPLBlockXYZ accordingly, and then MPLPLBlockEntAir to 0(0=block,1=ent,3=air)
 Builder:
 nummodaddies:4
-MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2
+MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 F2
 directedit:90 90 90 90 90
-MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2 +08
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 F2 +08
 directedit:90 90 90
 MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 F2
 directedit:90 90 90
