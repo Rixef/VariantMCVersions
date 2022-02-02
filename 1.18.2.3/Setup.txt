@@ -466,6 +466,12 @@ numnops:1
 nopsequence:nop
 
 1.18.2
+ExtractEntityListv3:8B 41 10 44 8B C0 41 81 E0 FFFF0F00 49 8B 49 48 49 8B 51 50 48 2B D1 48 C1 FA 02 4C 3B C2 0F83 BB000000
+alloc:8B 41 10    48 89 0D 5A000000    44 8B C0 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.2
 ExtractHealthHunger:
 nummodaddies:2
 ExtractHealth:F3 0F 2C 88 84 00 00 00 85 C9 7F ?? 48 8B 07 48 8B CF FF 90
