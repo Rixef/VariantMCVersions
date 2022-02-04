@@ -433,6 +433,14 @@ nopsequence:nan
 Zoom:F3 0F 10 48 ?? F3 0F 10 78 ?? F3 0F 10 40 ??
 directedit:90 90 90 90 90
 
+1.18.2
+NopEnterKeySendMessage:E8 4A 25 00 00
+directedit:90 90 90 90 90
+
+1.18.2
+NopButtonSendMessage:E8 1F 11 00 00 48
+directedit:90 90 90 90 90
+
 //registry extractions area:
 
 1.18.2
@@ -491,6 +499,12 @@ ExtractMenuTypeOpen:48 89 77 ?? 48 89 77 ?? 49 8B D0 48 8B CF E8 ???????? 90 49 
 alloc:48 89 3D 5D000000    48 89 77 10    48 89 77 18 jmpret
 numnops:3
 nopsequence:nop 3
+
+1.18.2
+ExtractChatInput:B4 FF 0F 10 45 E7 0F 11 07 0F 10 4D F7 +06
+alloc:0F11 07    48 89 3D 5A000000    0F10 4D F7 jmpret
+numnops:2
+nopsequence:nop 2
 
 1.17.11
 ExtractSoundListener:0F 11 06 41 0F 10 4E ?? 0F 11 4E ?? 4C 89 7B D8
