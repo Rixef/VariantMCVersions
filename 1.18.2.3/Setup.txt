@@ -185,6 +185,7 @@ ISIOSlot0ItemVariant:20
 ISIOSlot0ItemCount:22
 
 Item: 
+ItemMaxStackCount:78
 ItemTypeName:80
 ItemTypeNameLength:90
 ItemName:A8
@@ -410,6 +411,13 @@ Speed:06 00 00 F3 0F 10 80 84 00 00 00 48 83 C4 28 +03
 alloc:C7 80 84000000 [walkspeed] jmpret
 numnops:3
 nopsequence:nop 3
+
+1.18.2
+//0F B6 41 ?? C3 CC CC CC CC CC CC CC CC CC CC CC 48 8B 81
+StackableItem:0F B6 41 78 C3
+alloc:B8 40000000    C3 jmpret
+numnops:0
+nopsequence:nan
 
 1.17.11
 WaterBob:F3 41 0F 11 4F 04 F3 41 0F 59
