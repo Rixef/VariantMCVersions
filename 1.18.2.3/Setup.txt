@@ -415,7 +415,7 @@ nopsequence:nop 3
 1.18.2
 //0F B6 41 ?? C3 CC CC CC CC CC CC CC CC CC CC CC 48 8B 81
 StackableItem:0F B6 41 78 C3
-alloc:B8 40000000    C3 jmpret
+alloc:B8 FF000000    C3 jmpret
 numnops:0
 nopsequence:nan
 
