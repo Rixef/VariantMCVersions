@@ -194,6 +194,12 @@ ItemMaxDurability:120
 ItemAttackDamage:228
 ItemProtectionLevel:22C
 
+StaticTileVTables:
+WaterTileVTable:Minecraft.Windows.exe+3FA8D88
+DirtTileVTable:Minecraft.Windows.exe+3FB4580
+GrassTileVTable:Minecraft.Windows.exe+3F83668
+SoulSandTileVTable:Minecraft.Windows.exe+3FCD148
+
 1.18.2
 //just write 1 to LPOnGround consistently
 AirJump:88 90 D8 01 00 00 C3
