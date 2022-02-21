@@ -34,6 +34,7 @@ LPOInWater:25D
 LPOSplashing:25E
 LPOUnderWater:25F
 LPOTicksAlive:2A8
+LPOHealth:2B0
 LPOHotFeet:2C0
 LPOOnFire:0 //not there anymore?
 LPORiding:32D
