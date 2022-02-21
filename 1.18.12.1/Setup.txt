@@ -146,6 +146,7 @@ MPLOPLY:AC8
 MPLOPLZ:ACC
 MPLOPLEntID:AE0
 MPLOPLLiquid:B58
+MPLOWorldSeed:BC0
 
 SimplePlayerContainer: 
 SPCOItemStackArmor:E8
