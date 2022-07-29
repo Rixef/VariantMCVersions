@@ -1,1 +1,543 @@
+ClientInstance:
+ptrChainCount:0[[["Minecraft.Windows.exe"+00000000]+0]+0]+0
+CIOLocalPlayer:0
 
+//very similar structure to lp struct so just use those offsets
+//to cycle through first offset goes from 0 to 19F8 and then second offset switches to 8 and then first again goes from 0 to 19F8
+EntityDataStructure:
+ptrChainCount:0[[[["Minecraft.Windows.exe"+00000000]+0]+0]+0]+0
+
+//same shit as EDS except the first two offsets don't change, they stay as 0 and 8
+EntityProjectilePriority:
+ptrChainCount:0[[[["Minecraft.Windows.exe"+00000000]+0]+0]+0]+0
+
+LocalPlayer:
+LPOEntityID:10
+LPOPitch1:138
+LPOYaw1:13C
+LPOPitch2:140
+LPOYaw2:144
+LPOX0:158
+LPOY0:15C
+LPOZ0:160
+LPOFallDistance:1D4
+LPOOnGround:1D8
+LPOMoveObstructed:1DA
+LPOInGroundDepth:22C
+LPOStepHeight:238
+LPOWebSpeedX:24C
+LPOWebSpeedY:250
+LPOWebSpeedZ:254
+LPOXZDistanceTraveledSinceRespawn:258
+LPOImmobile:25C
+LPOInWater:25D
+LPOSplashing:25E
+LPOUnderWater:25F
+LPOTicksAlive:2A8
+LPOHealth:2B0
+LPOHotFeet:2C0
+LPOOnFire:0 //not there anymore?
+LPORiding:32D
+LPOMultiPlayerLevel:368
+LPOPersonaPointer:3A8
+LPONamespace:3D8
+LPONamespaceLength:3E8
+LPOTypeName:3F8
+LPOTypeNameLength:408
+LPOX1:4B8
+LPOY1:4BC
+LPOZ1:4C0
+LPOX2:4C4
+LPOY2:4C8
+LPOZ2:4CC
+LPOHitboxWidth:4D0
+LPOHitboxHeight:4D4
+LPOX3:4D8
+LPOY3:4DC
+LPOZ3:4E0
+LPOX4:4E4
+LPOY4:4E8
+LPOZ4:4EC
+LPOXVelocity:4F0
+LPOYVelocity:4F4
+LPOZVelocity:4F8
+LPOSimplePlayerContainer:678
+LPOLegsInBlock:6A0
+LPOHeadInBlock:6A7
+LPOBreath:6A8
+LPOFishing:714
+LPOCompass:730
+LPODamageTime:738
+LPOHandAnimationTime:79C
+LPOPerformingHandAnimation:7A8
+LPOHandAnimationFrame:7AC
+LPOJumping:7B4
+LPOLeapVelocity:7C0
+LPOTicksDead:7C8
+LPOLastJumpedX:7F4
+LPOLastJumpedY:7F8
+LPOLastJumpedZ:7FC
+LPOWalkSpeed:800
+LPOName:8C0
+LPONameLength:8D0
+LPOFlying:960
+LPOCanFly:96C
+LPOFlySpeed:990
+LPOFOV:99C
+LPOPlayerInventory:B70
+LPOUsingItem:FF0
+LPOUsingItemSlot:FF4
+LPOUsingItemDurationTicks:FF8
+LPOInvTypeOpen:1130
+LPOSleeping:1D44
+LPOMining:1D4C
+LPOGameMode:1D7C
+LPOHoldItem:2278
+LPOHoldItemTags:2280
+LPOHoldItemTileInfo:2288
+LPOHoldItemVariant:2290
+LPOHoldItemCount:2292
+
+TileStructure: 
+Tile:10
+
+TileDetails: 
+TileTypeName:8
+TileTypeNameLength:18
+TileName:30
+TileNameLength:40
+TileStyle:B4
+TileLightLevel:118
+TileID:14C
+TileDepthX:234
+TileDepthY:238
+TileDepthZ:23C
+
+HoldItem: 
+Item:0
+
+HoldItemTags: 
+Tags:8
+
+Tags: 
+Tag1:0
+Tag2:8
+Tag3:10
+
+Tag1: 
+TagName:20
+TagNameLength:30
+TagValue:48
+
+Tag1Value: 
+TagEnchantLevel:08
+TagNameInfo:10
+
+MultiPlayerLevel: 
+MPLOWorldName:5B8
+MPLOWorldNameLength:5C8
+MPLOWorldAgeTicks:6A8
+MPLOPLBlockEntAir:AB0
+MPLOPLFaceSide:AB4
+MPLOPLBlockX:AB8
+MPLOPLBlockY:ABC
+MPLOPLBlockZ:AC0
+MPLOPLX:AC4
+MPLOPLY:AC8
+MPLOPLZ:ACC
+MPLOPLEntID:AE0
+MPLOPLLiquid:B58
+MPLOWorldSeed:BC0
+
+SimplePlayerContainer: 
+SPCOItemStackArmor:E8
+
+ItemStackArmor: 
+ISAOHelmSlot:8
+ISAOCompoundTag:10
+ISAOTypePads:20
+ISAOCountPads:22
+ISAOPads:90
+
+HelmSlot: 
+HSOHelm:0
+
+Helm: 
+HOTypeName:50
+HOTypeNameLength:60
+HOName:A8
+HONameLength:B8
+HOMaxDurability:120
+HOAttackDamage:228
+HOProtectionLevel:22C
+
+PlayerInventory: 
+PIOSelectedSlot:10
+PIOInventory:B0
+
+Inventory: 
+IOItemStackInventory:E0
+
+ItemStackInventory: 
+ISIOPads:90
+ISIOSlot0:8
+ISIOSlot0ItemTags:10
+ISIOSlot0ItemTileInfo:18
+ISIOSlot0ItemVariant:20
+ISIOSlot0ItemCount:22
+
+Item: 
+ItemMaxStackCount:78
+ItemTypeName:80
+ItemTypeNameLength:90
+ItemName:A8
+ItemNameLength:B8
+ItemMaxDurability:120
+ItemAttackDamage:228
+ItemProtectionLevel:22C
+
+StaticTileVTables:
+WaterTileVTable:Minecraft.Windows.exe+43049E0
+DirtTileVTable:Minecraft.Windows.exe+4318520
+GrassTileVTable:Minecraft.Windows.exe+42E29E0
+SoulSandTileVTable:Minecraft.Windows.exe+432EE88
+
+1.18.12
+//just write 1 to LPOnGround consistently
+AirJump:88 90 D8 01 00 00 C3
+alloc:C7 80 E0010000 01000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+AirSwim:
+nummodaddies:2
+InWater:88 86 5D 02 00 00
+directedit:90 90 90 90 90 90
+UnderWater:88 86 5F 02 00 00
+directedit:90 90 90 90 90 90
+
+1.18.12
+NoKB:FF 90 70 01 00 00 C6 47 11 01 48 8B 5C 24 30 48 83 C4 20 5F C3
+directedit:90 90 90 90 90 90
+
+1.18.12
+AutoAttack:83 FF 01 75 69 40 +02
+directedit:00
+
+1.18.12
+AutoPlace:41 83 FE 01 75 68 +03
+directedit:00
+
+1.18.12
+AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF FF ?? ?? ?? 00 00 84 C0 0F84 ??000000 48 8B 07 41 B0 01 BA 46000000 48 8B CF
+directedit:C6 46 48 01
+
+1.18.12
+//Once these are set, set a multiplier for boat xyz velocity, also check LPRiding true or false
+BoatFly:
+nummodaddies:2
+BoatFlyOG:88 90 D8 01 00 00 C3
+directedit:90 90 90 90 90 90
+BoatFlyFDODF:F3 0F 11 83 ?? 01 00 00 EB AD E8
+directedit:90 90 90 90 90 90 90 90
+
+1.18.12
+//once these are set just write to MPLPLBlockXYZ accordingly, and then MPLPLBlockEntAir to 0(0=block,1=ent,3=air)
+Builder:
+nummodaddies:4
+MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 82
+directedit:90 90 90 90 90
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 82 +08
+directedit:90 90 90
+MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 82
+directedit:90 90 90
+MPLPLBlockEntAirFarCheck:C7 40 18 03 00 00 00 48 8B 8D
+directedit:90 90 90 90 90 90 90
+
+1.18.12
+//Just check chestslot for elytra wings and then set a multiplier and multiply that times xyz velocity at the hold of a hotkey
+ElytraFly:
+
+1.18.12
+//swap endianness on the speeds to get the right hex bytes
+FastLadder:
+nummodaddies:2
+LadderUp:C7 81 ?? ?? 00 00 CD CC 4C 3E C3 CC CC CC CC CC C7
+directedit:C7 81 F4040000 [ladderupspeed]
+LadderDown:41 C7 45 04 CDCC4CBE 49 8B 07 49 8B CF FF 90 ????0000 84 C0 74 18 49 8B 07 49 8B CF FF 50 60 84 C0 74 0B ?? 0F2F ?? 04 76 04 45 89 65 04 49 8B 07
+directedit:41 C7 45 04 [ladderdownspeed]
+
+1.18.12
+FastPlace:80 7B 51 00 74 73 +03
+directedit:01
+
+1.18.2
+//different modes, by default just set LPCanFly to 1
+//otherwise to functionHookMode on LPFlying which is what this script will be for
+FlyMod:80 B8 C0 09 00 00 00 75 12 80 B8 1C 0A 00 00 01 74 0C
+alloc:80 B8 C0 09 00 00 01
+numnops:2
+nopsequence:nop 2
+
+1.18.12
+//rbx+40,44,48 is x,y,z respectively
+//the first addy extracts rbx in the newmem
+//to access it read newmemaddy+0x64 into uintptr
+//then add the offsets to that uintptr and read as floats
+FreeCam:
+nummodaddies:3
+FCOCamX:40
+FCOCamY:44
+FCOCamZ:48
+CamXWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44
+alloc:48 89 1D 5D000000 jmpret
+numnops:0
+nopsequence:nan
+CamYWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44 +11
+directedit:90 90 90 90 90
+CamZWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44 +22
+directedit:90 90 90 90 90
+
+1.18.12
+FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 2D 00 00 00
+alloc:F3 0F10 42 18 C7 42 18 00007A44 jmpret
+numnops:0
+nopsequence:nan
+
+1.18.12
+//alternatively just set LPVelY to jumpheight(currently just using this method)
+HighJump:F3 0F 11 43 1C FF
+alloc:C7 43 1C [jumpheight] jmpret
+numnops:0
+nopsequence:nan
+
+1.18.12
+//adjustable hit reach. static address. just set value via memcpy(hitreachAddress,&hitreachmodifier,sizeof(DWORD))
+HitReach:00 00 40 40 DB 0F
+directedit:[hitreachmodifier]
+
+1.18.12
+//to find just search Minecraft.Windows.exe module for 5.700000000 it's a static address and should pop up with only one result on first scan
+//adjustable block reach. static address. just set value via memcpy(blockreachAddress,&blockreachmodifier,sizeof(DWORD))
+BlockReach:66 66 B6 40
+directedit:[blockreachmodifier]
+
+1.18.12
+//just iterate through entity list and set any hbwidth/heights instead
+Hitbox:
+nummodaddies:2
+HBWidth:CC F3 0F 10 81 ?? 04 00 00 C3 +01
+alloc:C7 81 D0040000 [hbwidth] C7 81 D4040000 [hbheight] jmpret
+numnops:3
+nopsequence:nop 3
+HBHeight:F3 0F 58 8B ?? 04 00 00 F3 0F 10 10
+directedit:90 90 90 90 90 90 90 90
+
+1.18.12
+//Just set LPGameMode to 1
+HRIB:
+
+1.18.12
+InstantBreak:F3 0F 11 4B ?? 48 8B 45 ?? 48 39 43 ?? 0F 8D ?? ?? ?? ?? 48 69 8B
+directedit:F3 0F11 73 24
+
+1.18.12
+Jetpack:
+nummodaddies:2
+LPFlyingWriter:0F B6 40 ?? C3 CC CC CC CC CC CC CC CC CC 4C 8B 49
+directedit:90 90 90 90
+LeapVelocityWriter:F3 0F 11 88 ?? 07 00 00 C3 CC CC CC 48 8B 41 ?? F3 0F 10 80 ?? ?? 00 00 C3 CC CC CC 48 83
+directedit:90 90 90 90 90 90 90 90
+
+1.17.11
+//used for ClickGUI and sheezy; gives you control of the mouse even when escape menu or inventory or anything is not open
+MouseControl:00 75 16 48 8B CB E8 ?? ?? ?? ?? 84 C0
+directedit:01
+
+1.17.11
+MPLPLBlockControl:
+nummodaddies:2
+MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2
+directedit:90 90 90 90 90
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2 +08
+directedit:90 90 90
+
+1.17.11
+NoBadOmen:44 39 3C 06 74 15
+alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+NoBlind:39 01 0F84 ????0000 48 85 C9 0F84 ????0000 48 8B ?? ?? ?? 00 00
+alloc:C7 01 00000000 39 01 0F84 +1EEC09A] jmpret
+numnops:3
+nopsequence:nop 3
+
+1.18.12
+NoLevitate:43 39 04 08 4B 8D 0C 08 75 ?? 33 C9 48 85 C9 0F95 C0 C3 CC CC CC CC CC
+alloc:43 C7 04 08 0000000043 39 04 08 4B 8D 0C 08 jmpret
+numnops:3
+nopsequence:nop 3
+
+1.18.12
+NoNausea:39 01 74 ?? 48 85 C9 75 ?? F3 0F10 87 ????0000
+alloc:C7 01 00000000 39 01 0F84 +1437B09] 48 85 C9 jmpret
+numnops:2
+nopsequence:nop 2
+
+1.18.12
+NoSlowFall:39 10 74 ?? 44 38 60 ?? 75 ?? 48 83 E8 ?? 48 3B C1
+alloc:C7 00 00000000 39 10 0F84 +2006B3A] 44 38 60 1B jmpret
+numnops:3
+nopsequence:nop 3
+
+1.18.12
+//just nop 'em and then set LPInWater and LPUnderWater
+NoWater:
+nummodaddies:2
+NoWaterIW:88 86 5D 02 00 00
+directedit:90 90 90 90 90 90
+NoWaterUW:88 86 5F 02 00 00
+directedit:90 90 90 90 90 90
+
+1.18.12
+NoWeb:75 ?? F3 0F10 02 F3 41 0F11 01 8B 42 ?? 41 89 41 ?? F3 0F10 42 ?? C7 81 ????0000 00000000 F3 41 0F11 41 ?? C3
+directedit:EB 26
+
+1.18.12
+RapidHit:80 7B ?? 00 74 ?? 85 FF 0F85 ??000000
+directedit:01
+
+1.18.12
+Scaffold:88 41 ?? F2 0F 10 42 ?? F2 0F 11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 ?? ?? ?? ?? 0F B6 43 ??
+directedit:90 90 90
+
+1.18.12
+Speed:CC CC CC CC CC CC 48 83 EC 28  48 8B 01  48 8D 15 A2276202  FF 90 78060000  F3 0F10 80 84000000  48 83 C4 28  C3 CC CC CC CC CC CC CC CC +26
+alloc:C7 80 84000000 [walkspeed] jmpret
+numnops:3
+nopsequence:nop 3
+
+1.18.12
+//0F B6 41 ?? C3 CC CC CC CC CC CC CC CC CC CC CC 48 8B 81
+StackableItem:0F B6 41 78 C3
+alloc:B8 FF000000  C3 jmpret
+numnops:0
+nopsequence:nan
+
+1.17.11
+WaterBob:F3 41 0F 11 4F 04 F3 41 0F 59
+alloc:41 C7 47 04 [watervelyspeed] jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+//just press a hotkey to make a waypoint by storing
+//LPXYZ 1&2(24bytes)
+Waypoints:
+
+1.17.12
+WebFloat:F3 0F 11 48 1C F3 0F 10 05 ? ? ? ? F3 0F 11 40 20 48 8B 06 48 8D
+alloc:C7 40 1C [webvelyspeed] jmpret
+numnops:0
+nopsequence:nan
+
+1.17.11
+//for zoomx2 also change LPFOV
+Zoom:F3 0F 10 48 ?? F3 0F 10 78 ?? F3 0F 10 40 ??
+directedit:90 90 90 90 90
+
+1.18.12
+NopEnterKeySendMessage:E8 ?? ?? ?? ?? 40 88 AB C3
+directedit:90 90 90 90 90
+
+1.18.12
+NopButtonSendMessage:E8 ?? ?? ?? ?? 48 8B 13 0F 57 C0 F3 0F
+directedit:90 90 90 90 90
+
+//registry extractions area:
+
+1.18.12
+ExtractWalkSpeed:7C 8B 87 84 00 00 00 89 83 84 00 00 00 8B 47 7C 89 43 7C 8B 87 +01
+alloc:8B 87 84000000  48 89 3D 57000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+ExtractLocalPlayer:48 8B 01 FF 90 ?? ?? 00 00 48 8B C8 E8 ?? ?? ?? ?? 48 8B 08 E8 ?? ?? ?? ?? 48 89 83 88010000 48 8D 83 80010000 C7 83 80010000 01000000 48 8B 5C 24 30 48 83 C4 20 5F C3 83 F9 01
+alloc:48 8B 01  48 89 0D 5A000000  FF 90 08050000 jmpret
+numnops:4
+nopsequence:nop 4
+
+1.18.12
+ExtractLookAtTileData:8B 44 24 48 83 C0 FE 83 F8 01 76 70 48 8B CF E8 ?? ?? ?? ?? 84 C0 75 60 48 8B 8B
+alloc:8B 44 24 48    83 C0 FE    48 89 0D 56000000 jmpret
+numnops:2
+nopsequence:nop 2
+
+1.18.2
+ExtractEntityList:8B 43 10 44 8B C0 41 81 E0 FFFF0F00 4C 8B 49 48 48 8B 51 50 49 2B D1 48 C1 FA 02 4C 3B C2 73 16 43 39 04 81 75 10 48 8D 54 24 20 89 44 24 20
+alloc:8B 43 10    48 89 1D 5A000000    44 8B C0 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.2
+ExtractEntityListv2:8B 43 10 44 8B C0 41 81 E0 FFFF0F00 4C 8B 49 48 48 8B 51 50 49 2B D1 48 C1 FA 02 4C 3B C2 73 18 43 39 04 81 75 12 48 8D 54 24 20
+alloc:8B 43 10    48 89 1D 5A000000    44 8B C0 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+ExtractEntityListv3:8B 41 10 44 8B C0 41 81 E0 FF FF 0F 00 49 8B ?? ????0000 49 8B ?? ????0000 48 2B D1 48 C1 FA 02 4C 3B C2 0F83 ????0000 42 39 04 81 0F85 AB000000
+alloc:8B 41 10    48 89 0D 5A000000    44 8B C0 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+ExtractHealthHunger:
+nummodaddies:2
+ExtractHealth:F3 0F 2C 88 84 00 00 00 85 C9 7F ?? 48 8B 07 48 8B CF FF 90
+alloc:F3 0F2C 88 84000000    89 0D 56000000 jmpret
+numnops:3
+nopsequence:nop 3
+ExtractHunger:8B 88 ?? 00 00 00 89 4F ?? 48 8B 4F ?? E8 ?? ?? ?? ?? F3 0F 10 B0
+alloc:8B 88 84000000    89 0D 4D000000 jmpret
+numnops:1
+nopsequence:nop
+
+1.18.12
+//rdi+10
+//24 = chatOpen 25 = escapeMenuOpen 29 = inventoryOpen
+//anything > 0 = a menu is open
+ExtractMenuTypeOpen:48 89 77 ?? 48 89 77 ?? 49 8B D0 48 8B CF E8 ???????? 90 49 8D 5F ?? 48 89 33
+alloc:48 89 3D 5D000000    48 89 77 10    48 89 77 18 jmpret
+numnops:3
+nopsequence:nop 3
+
+1.18.12
+ExtractChatInput:B2 FF 0F 10 45 E7 0F 11 07 0F 10 4D F7 +06
+alloc:0F11 07  48 89 3D 5A000000  0F10 4D F7 jmpret
+numnops:2
+nopsequence:nop 2
+
+1.17.11
+ExtractSoundListener:0F 11 06 41 0F 10 4E ?? 0F 11 4E ?? 4C 89 7B D8
+alloc:0F11 06 41 0F10 4E 10 48 89 35 21000000 jmpret
+numnops:3
+nopsequence:nop 3
+
+1.17.11
+//r13(reg extraction) + 0x60 byte value != 0 means chat is open
+ExtractChatOpen:41 89 7D ?? 45 88 A5 ?? ?? 00 00
+alloc:41 89 7D 60 45 88 A5 3C010000 4C 89 2D 1E000000 jmpret
+numnops:6
+nopsequence:nop 6
+
+1.17.11
+//
+ExtractAirTile:48 8B 01 4D 8B C4 48 89 54 24 ?? 49 8D 94 24 ?? 00 00 00
+alloc:48 8B 01 48 89 0D 26000000 4D 8B C4 jmpret
+numnops:1
+nopsequence:nop
