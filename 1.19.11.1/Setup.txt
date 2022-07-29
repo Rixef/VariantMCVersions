@@ -11,6 +11,7 @@ ptrChainCount:0[[[["Minecraft.Windows.exe"+00000000]+0]+0]+0]+0
 EntityProjectilePriority:
 ptrChainCount:0[[[["Minecraft.Windows.exe"+00000000]+0]+0]+0]+0
 
+1.19.11
 LocalPlayer:
 LPOEntityID:10
 LPOPitch1:138
@@ -30,12 +31,12 @@ LPOWebSpeedY:250
 LPOWebSpeedZ:254
 LPOXZDistanceTraveledSinceRespawn:258
 LPOImmobile:25C
-LPOInWater:25D
-LPOSplashing:25E
-LPOUnderWater:25F
-LPOTicksAlive:2A8
+LPOInWater:25E
+LPOSplashing:25F
+LPOUnderWater:260
+LPOTicksAlive:2AC
 LPOHealth:2B0
-LPOHotFeet:2C0
+LPOHotFeet:2C4
 LPOOnFire:0 //not there anymore?
 LPORiding:32D
 LPOMultiPlayerLevel:368
@@ -61,46 +62,48 @@ LPOZ4:4EC
 LPOXVelocity:4F0
 LPOYVelocity:4F4
 LPOZVelocity:4F8
-LPOSimplePlayerContainer:678
-LPOLegsInBlock:6A0
-LPOHeadInBlock:6A7
-LPOBreath:6A8
-LPOFishing:714
-LPOCompass:730
-LPODamageTime:738
-LPOHandAnimationTime:79C
-LPOPerformingHandAnimation:7A8
-LPOHandAnimationFrame:7AC
-LPOJumping:7B4
-LPOLeapVelocity:7C0
-LPOTicksDead:7C8
-LPOLastJumpedX:7F4
-LPOLastJumpedY:7F8
-LPOLastJumpedZ:7FC
-LPOWalkSpeed:800
-LPOName:8C0
-LPONameLength:8D0
-LPOFlying:960
-LPOCanFly:96C
-LPOFlySpeed:990
-LPOFOV:99C
-LPOPlayerInventory:B70
-LPOUsingItem:FF0
-LPOUsingItemSlot:FF4
-LPOUsingItemDurationTicks:FF8
-LPOInvTypeOpen:1130
-LPOSleeping:1D44
-LPOMining:1D4C
-LPOGameMode:1D7C
-LPOHoldItem:2278
-LPOHoldItemTags:2280
-LPOHoldItemTileInfo:2288
-LPOHoldItemVariant:2290
-LPOHoldItemCount:2292
+LPOSimplePlayerContainer:638
+LPOLegsInBlock:660
+LPOHeadInBlock:667
+LPOBreath:668
+LPOFishing:6D4
+LPOCompass:730 //need to find a new one(maybe just pitch/yaw)
+LPODamageTime:6F8
+LPOHandAnimationTime:870
+LPOPerformingHandAnimation:87C
+LPOHandAnimationFrame:880
+LPOJumping:888
+LPOLeapVelocity:894
+LPOTicksDead:89C
+LPOLastJumpedX:8C0
+LPOLastJumpedY:8C4
+LPOLastJumpedZ:8C8
+LPOWalkSpeed:8CC
+LPOName:9A8
+LPONameLength:9B8
+LPOFlying:B18
+LPOCanFly:B24
+LPOFlySpeed:B48
+LPOFOV:B54
+LPOPlayerInventory:E68
+LPOUsingItem:127A
+LPOUsingItemSlot:FF4 //went dead
+LPOUsingItemDurationTicks:FF8 //dead
+LPOInvTypeOpen:1438
+LPOSleeping:2054
+LPOMining:205C
+LPOGameMode:208C
+LPOHoldItem:2590
+LPOHoldItemTags:2598
+LPOHoldItemTileInfo:25A0
+LPOHoldItemVariant:25A8
+LPOHoldItemCount:25AA
 
+1.19.11
 TileStructure: 
 Tile:10
 
+1.19.11
 TileDetails: 
 TileTypeName:8
 TileTypeNameLength:18
@@ -113,45 +116,53 @@ TileDepthX:234
 TileDepthY:238
 TileDepthZ:23C
 
+1.19.11
 HoldItem: 
 Item:0
 
+1.19.11
 HoldItemTags: 
 Tags:8
 
+1.19.11
 Tags: 
 Tag1:0
 Tag2:8
 Tag3:10
 
+1.19.11
 Tag1: 
 TagName:20
 TagNameLength:30
 TagValue:48
 
+1.19.11
 Tag1Value: 
 TagEnchantLevel:08
 TagNameInfo:10
 
+1.19.11
 MultiPlayerLevel: 
-MPLOWorldName:5B8
-MPLOWorldNameLength:5C8
-MPLOWorldAgeTicks:6A8
-MPLOPLBlockEntAir:AB0
-MPLOPLFaceSide:AB4
-MPLOPLBlockX:AB8
-MPLOPLBlockY:ABC
-MPLOPLBlockZ:AC0
-MPLOPLX:AC4
-MPLOPLY:AC8
-MPLOPLZ:ACC
-MPLOPLEntID:AE0
-MPLOPLLiquid:B58
-MPLOWorldSeed:BC0
+MPLOWorldName:548
+MPLOWorldNameLength:558
+MPLOWorldAgeTicks:620
+MPLOPLBlockEntAir:A68
+MPLOPLFaceSide:A6C
+MPLOPLBlockX:A70
+MPLOPLBlockY:A74
+MPLOPLBlockZ:A78
+MPLOPLX:A7C
+MPLOPLY:A80
+MPLOPLZ:A84
+MPLOPLEntID:A98
+MPLOPLLiquid:B10
+MPLOWorldSeed:B78
 
+1.19.11
 SimplePlayerContainer: 
 SPCOItemStackArmor:E8
 
+1.19.11
 ItemStackArmor: 
 ISAOHelmSlot:8
 ISAOCompoundTag:10
@@ -159,9 +170,11 @@ ISAOTypePads:20
 ISAOCountPads:22
 ISAOPads:90
 
+1.19.11
 HelmSlot: 
 HSOHelm:0
 
+1.19.11
 Helm: 
 HOTypeName:50
 HOTypeNameLength:60
@@ -171,21 +184,25 @@ HOMaxDurability:120
 HOAttackDamage:228
 HOProtectionLevel:22C
 
+1.19.11
 PlayerInventory: 
 PIOSelectedSlot:10
-PIOInventory:B0
+PIOInventory:C0
 
+1.19.11
 Inventory: 
 IOItemStackInventory:E0
 
+1.19.11
 ItemStackInventory: 
-ISIOPads:90
+ISIOPads:A0
 ISIOSlot0:8
 ISIOSlot0ItemTags:10
 ISIOSlot0ItemTileInfo:18
 ISIOSlot0ItemVariant:20
 ISIOSlot0ItemCount:22
 
+1.19.11
 Item: 
 ItemMaxStackCount:78
 ItemTypeName:80
@@ -196,40 +213,41 @@ ItemMaxDurability:120
 ItemAttackDamage:228
 ItemProtectionLevel:22C
 
+1.19.11
 StaticTileVTables:
-WaterTileVTable:Minecraft.Windows.exe+43049E0
-DirtTileVTable:Minecraft.Windows.exe+4318520
-GrassTileVTable:Minecraft.Windows.exe+42E29E0
-SoulSandTileVTable:Minecraft.Windows.exe+432EE88
+WaterTileVTable:Minecraft.Windows.exe+410D5B8
+DirtTileVTable:Minecraft.Windows.exe+40EEAF0
+GrassTileVTable:Minecraft.Windows.exe+40C0898
+SoulSandTileVTable:Minecraft.Windows.exe+41298E0
 
-1.18.12
+1.19.11
 //just write 1 to LPOnGround consistently
 AirJump:88 90 D8 01 00 00 C3
 alloc:C7 80 E0010000 01000000 jmpret
 numnops:1
 nopsequence:nop
 
-1.18.12
+1.19.11
 AirSwim:
 nummodaddies:2
-InWater:88 86 5D 02 00 00
+InWater:88 83 5E 02 00 00
 directedit:90 90 90 90 90 90
-UnderWater:88 86 5F 02 00 00
+UnderWater:88 83 60 02 00 00 E8 ?? ?? ?? ?? 0F
 directedit:90 90 90 90 90 90
 
-1.18.12
+1.19.11
 NoKB:FF 90 70 01 00 00 C6 47 11 01 48 8B 5C 24 30 48 83 C4 20 5F C3
 directedit:90 90 90 90 90 90
 
-1.18.12
+1.19.11
 AutoAttack:83 FF 01 75 69 40 +02
 directedit:00
 
-1.18.12
+1.19.11
 AutoPlace:41 83 FE 01 75 68 +03
 directedit:00
 
-1.18.12
+1.19.11
 AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF FF ?? ?? ?? 00 00 84 C0 0F84 ??000000 48 8B 07 41 B0 01 BA 46000000 48 8B CF
 directedit:C6 46 48 01
 
@@ -242,31 +260,31 @@ directedit:90 90 90 90 90 90
 BoatFlyFDODF:F3 0F 11 83 ?? 01 00 00 EB AD E8
 directedit:90 90 90 90 90 90 90 90
 
-1.18.12
+1.19.11
 //once these are set just write to MPLPLBlockXYZ accordingly, and then MPLPLBlockEntAir to 0(0=block,1=ent,3=air)
 Builder:
 nummodaddies:4
-MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 82
+MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2
 directedit:90 90 90 90 90
-MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 82 +08
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2 +08
 directedit:90 90 90
-MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 82
+MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 C2
 directedit:90 90 90
 MPLPLBlockEntAirFarCheck:C7 40 18 03 00 00 00 48 8B 8D
 directedit:90 90 90 90 90 90 90
 
-1.18.12
+1.19.11
 //Just check chestslot for elytra wings and then set a multiplier and multiply that times xyz velocity at the hold of a hotkey
 ElytraFly:
 
-1.18.12
+1.19.11
 //swap endianness on the speeds to get the right hex bytes
 FastLadder:
 nummodaddies:2
 LadderUp:C7 81 ?? ?? 00 00 CD CC 4C 3E C3 CC CC CC CC CC C7
 directedit:C7 81 F4040000 [ladderupspeed]
-LadderDown:41 C7 45 04 CDCC4CBE 49 8B 07 49 8B CF FF 90 ????0000 84 C0 74 18 49 8B 07 49 8B CF FF 50 60 84 C0 74 0B ?? 0F2F ?? 04 76 04 45 89 65 04 49 8B 07
-directedit:41 C7 45 04 [ladderdownspeed]
+LadderDown:41 C7 46 04 CDCC4CBE 49 8B ?? 24 49 8B CC FF 90 B0020000 84 C0 74 55
+directedit:41 C7 46 04 [ladderdownspeed]
 
 1.18.12
 FastPlace:80 7B 51 00 74 73 +03
@@ -280,7 +298,7 @@ alloc:80 B8 C0 09 00 00 01
 numnops:2
 nopsequence:nop 2
 
-1.18.12
+1.19.11
 //rbx+40,44,48 is x,y,z respectively
 //the first addy extracts rbx in the newmem
 //to access it read newmemaddy+0x64 into uintptr
@@ -299,31 +317,31 @@ directedit:90 90 90 90 90
 CamZWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44 +22
 directedit:90 90 90 90 90
 
-1.18.12
-FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 2D 00 00 00
+1.19.11
+FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 2E 00 00 00
 alloc:F3 0F10 42 18 C7 42 18 00007A44 jmpret
 numnops:0
 nopsequence:nan
 
-1.18.12
+1.19.11
 //alternatively just set LPVelY to jumpheight(currently just using this method)
-HighJump:F3 0F 11 43 1C FF
+HighJump:F3 0F 11 43 1C 48 8B 07
 alloc:C7 43 1C [jumpheight] jmpret
 numnops:0
 nopsequence:nan
 
-1.18.12
+1.19.11
 //adjustable hit reach. static address. just set value via memcpy(hitreachAddress,&hitreachmodifier,sizeof(DWORD))
 HitReach:00 00 40 40 DB 0F
 directedit:[hitreachmodifier]
 
-1.18.12
+1.19.11
 //to find just search Minecraft.Windows.exe module for 5.700000000 it's a static address and should pop up with only one result on first scan
 //adjustable block reach. static address. just set value via memcpy(blockreachAddress,&blockreachmodifier,sizeof(DWORD))
 BlockReach:66 66 B6 40
 directedit:[blockreachmodifier]
 
-1.18.12
+1.19.11
 //just iterate through entity list and set any hbwidth/heights instead
 Hitbox:
 nummodaddies:2
@@ -334,7 +352,7 @@ nopsequence:nop 3
 HBHeight:F3 0F 58 8B ?? 04 00 00 F3 0F 10 10
 directedit:90 90 90 90 90 90 90 90
 
-1.18.12
+1.19.11
 //Just set LPGameMode to 1
 HRIB:
 
@@ -355,12 +373,12 @@ directedit:90 90 90 90 90 90 90 90
 MouseControl:00 75 16 48 8B CB E8 ?? ?? ?? ?? 84 C0
 directedit:01
 
-1.17.11
+1.19.11
 MPLPLBlockControl:
 nummodaddies:2
-MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2
+MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2
 directedit:90 90 90 90 90
-MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 E2 +08
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2 +08
 directedit:90 90 90
 
 1.17.11
@@ -369,48 +387,48 @@ alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
 numnops:1
 nopsequence:nop
 
-1.18.12
+1.19.11
 NoBlind:39 01 0F84 ????0000 48 85 C9 0F84 ????0000 48 8B ?? ?? ?? 00 00
 alloc:C7 01 00000000 39 01 0F84 +1EEC09A] jmpret
 numnops:3
 nopsequence:nop 3
 
-1.18.12
+1.19.11
 NoLevitate:43 39 04 08 4B 8D 0C 08 75 ?? 33 C9 48 85 C9 0F95 C0 C3 CC CC CC CC CC
 alloc:43 C7 04 08 0000000043 39 04 08 4B 8D 0C 08 jmpret
 numnops:3
 nopsequence:nop 3
 
-1.18.12
+1.19.11
 NoNausea:39 01 74 ?? 48 85 C9 75 ?? F3 0F10 87 ????0000
 alloc:C7 01 00000000 39 01 0F84 +1437B09] 48 85 C9 jmpret
 numnops:2
 nopsequence:nop 2
 
-1.18.12
+1.19.11
 NoSlowFall:39 10 74 ?? 44 38 60 ?? 75 ?? 48 83 E8 ?? 48 3B C1
 alloc:C7 00 00000000 39 10 0F84 +2006B3A] 44 38 60 1B jmpret
 numnops:3
 nopsequence:nop 3
 
-1.18.12
+1.19.11
 //just nop 'em and then set LPInWater and LPUnderWater
 NoWater:
 nummodaddies:2
-NoWaterIW:88 86 5D 02 00 00
+NoWaterIW:88 83 5E 02 00 00
 directedit:90 90 90 90 90 90
-NoWaterUW:88 86 5F 02 00 00
+NoWaterUW:88 83 60 02 00 00 E8 ?? ?? ?? ?? 0F
 directedit:90 90 90 90 90 90
 
 1.18.12
 NoWeb:75 ?? F3 0F10 02 F3 41 0F11 01 8B 42 ?? 41 89 41 ?? F3 0F10 42 ?? C7 81 ????0000 00000000 F3 41 0F11 41 ?? C3
 directedit:EB 26
 
-1.18.12
+1.19.11
 RapidHit:80 7B ?? 00 74 ?? 85 FF 0F85 ??000000
 directedit:01
 
-1.18.12
+1.19.11
 Scaffold:88 41 ?? F2 0F 10 42 ?? F2 0F 11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 ?? ?? ?? ?? 0F B6 43 ??
 directedit:90 90 90
 
@@ -420,7 +438,7 @@ alloc:C7 80 84000000 [walkspeed] jmpret
 numnops:3
 nopsequence:nop 3
 
-1.18.12
+1.19.11
 //0F B6 41 ?? C3 CC CC CC CC CC CC CC CC CC CC CC 48 8B 81
 StackableItem:0F B6 41 78 C3
 alloc:B8 FF000000  C3 jmpret
@@ -433,7 +451,7 @@ alloc:41 C7 47 04 [watervelyspeed] jmpret
 numnops:1
 nopsequence:nop
 
-1.18.12
+1.19.11
 //just press a hotkey to make a waypoint by storing
 //LPXYZ 1&2(24bytes)
 Waypoints:
@@ -449,30 +467,30 @@ nopsequence:nan
 Zoom:F3 0F 10 48 ?? F3 0F 10 78 ?? F3 0F 10 40 ??
 directedit:90 90 90 90 90
 
-1.18.12
-NopEnterKeySendMessage:E8 ?? ?? ?? ?? 40 88 AB C3
+1.19.11
+NopEnterKeySendMessage:E8 ?? ?? ?? ?? 40 88 AB EC
 directedit:90 90 90 90 90
 
-1.18.12
+1.19.11
 NopButtonSendMessage:E8 ?? ?? ?? ?? 48 8B 13 0F 57 C0 F3 0F
 directedit:90 90 90 90 90
 
 //registry extractions area:
 
-1.18.12
+1.19.11
 ExtractWalkSpeed:7C 8B 87 84 00 00 00 89 83 84 00 00 00 8B 47 7C 89 43 7C 8B 87 +01
 alloc:8B 87 84000000  48 89 3D 57000000 jmpret
 numnops:1
 nopsequence:nop
 
-1.18.12
+1.19.11
 ExtractLocalPlayer:48 8B 01 FF 90 ?? ?? 00 00 48 8B C8 E8 ?? ?? ?? ?? 48 8B 08 E8 ?? ?? ?? ?? 48 89 83 88010000 48 8D 83 80010000 C7 83 80010000 01000000 48 8B 5C 24 30 48 83 C4 20 5F C3 83 F9 01
 alloc:48 8B 01  48 89 0D 5A000000  FF 90 08050000 jmpret
 numnops:4
 nopsequence:nop 4
 
-1.18.12
-ExtractLookAtTileData:8B 44 24 48 83 C0 FE 83 F8 01 76 70 48 8B CF E8 ?? ?? ?? ?? 84 C0 75 60 48 8B 8B
+1.19.11
+ExtractLookAtTileData:8B 44 24 48 83 C0 FE 83 F8 01 76 ?? ?? 8B ?? E8 ?? ?? ?? ?? 84 C0 75
 alloc:8B 44 24 48    83 C0 FE    48 89 0D 56000000 jmpret
 numnops:2
 nopsequence:nop 2
@@ -507,9 +525,9 @@ alloc:8B 88 84000000    89 0D 4D000000 jmpret
 numnops:1
 nopsequence:nop
 
-1.18.12
+1.19.11
 //rdi+10
-//24 = chatOpen 25 = escapeMenuOpen 29 = inventoryOpen
+//24 = chatOpen 25 = escapeMenuOpen 29 = inventoryOpen 31 = chestOpen
 //anything > 0 = a menu is open
 ExtractMenuTypeOpen:48 89 77 ?? 48 89 77 ?? 49 8B D0 48 8B CF E8 ???????? 90 49 8D 5F ?? 48 89 33
 alloc:48 89 3D 5D000000    48 89 77 10    48 89 77 18 jmpret
