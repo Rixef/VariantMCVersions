@@ -146,6 +146,7 @@ MultiPlayerLevel:
 MPLOWorldName:548
 MPLOWorldNameLength:558
 MPLOWorldAgeTicks:620
+MPLOWorldSeed:740
 MPLOPLBlockEntAir:A68
 MPLOPLFaceSide:A6C
 MPLOPLBlockX:A70
@@ -156,7 +157,16 @@ MPLOPLY:A80
 MPLOPLZ:A84
 MPLOPLEntID:A98
 MPLOPLLiquid:B10
-MPLOWorldSeed:B78
+MPLOWorldSeedPartial:B78
+
+1.19.11
+WorldSeed:
+WSOSeedPointer:0
+
+1.19.11
+SeedPointer:
+SPTypeName:18
+SPFullSeed:40
 
 1.19.11
 SimplePlayerContainer: 
