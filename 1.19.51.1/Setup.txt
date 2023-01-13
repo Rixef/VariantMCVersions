@@ -523,17 +523,17 @@ alloc:8B 41 10    48 89 0D 5A000000    44 8B C0 jmpret
 numnops:1
 nopsequence:nop
 
-1.18.12
+1.19.51
 ExtractHealthHunger:
 nummodaddies:2
-ExtractHealth:F3 0F 2C 88 84 00 00 00 85 C9 7F ?? 48 8B 07 48 8B CF FF 90
-alloc:F3 0F2C 88 84000000    89 0D 56000000 jmpret
+ExtractHealth:F3 0F 2C 88 ?? 00 00 00 66
+alloc:48 A3 6400B03BF77F0000    F3 0F2C 88 80000000 jmpret
 numnops:3
 nopsequence:nop 3
-ExtractHunger:8B 88 ?? 00 00 00 89 4F ?? 48 8B 4F ?? E8 ?? ?? ?? ?? F3 0F 10 B0
-alloc:8B 88 84000000    89 0D 4D000000 jmpret
-numnops:1
-nopsequence:nop
+ExtractHunger:0F 2F 80 84 00 00 00 72 21
+alloc:48 A3 6400B440F77F0000    0F2F 80 84000000 jmpret
+numnops:2
+nopsequence:nop 2
 
 1.19.11
 //rdi+10
