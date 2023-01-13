@@ -499,9 +499,9 @@ alloc:48 8B 01  48 89 0D 5A000000  FF 90 08050000 jmpret
 numnops:4
 nopsequence:nop 4
 
-1.19.11
+1.19.51
 ExtractLookAtTileData:8B 44 24 48 83 C0 FE 83 F8 01 76 ?? ?? 8B ?? E8 ?? ?? ?? ?? 84 C0 75
-alloc:8B 44 24 48    83 C0 FE    48 89 0D 56000000 jmpret
+alloc:8B 44 24 48    83 C0 FE    4C 89 35 56000000 jmpret
 numnops:2
 nopsequence:nop 2
 
