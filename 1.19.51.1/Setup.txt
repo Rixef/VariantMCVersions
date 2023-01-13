@@ -327,9 +327,9 @@ directedit:90 90 90 90 90
 CamZWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44 +22
 directedit:90 90 90 90 90
 
-1.19.11
-FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 2E 00 00 00
-alloc:F3 0F10 42 18 C7 42 18 00007A44 jmpret
+1.19.51
+FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 2F 00 00 00
+alloc:F3 0F10 42 18 C7 42 18 0000C842 jmpret
 numnops:0
 nopsequence:nan
 
