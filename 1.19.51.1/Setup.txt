@@ -257,8 +257,8 @@ directedit:00
 AutoPlace:41 83 FE 01 75 68 +03
 directedit:00
 
-1.19.11
-AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF FF ?? ?? ?? 00 00 84 C0 0F84 ??000000 48 8B 07 41 B0 01 BA 46000000 48 8B CF
+1.19.51
+AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF
 directedit:C6 46 48 01
 
 1.18.12
@@ -270,31 +270,31 @@ directedit:90 90 90 90 90 90
 BoatFlyFDODF:F3 0F 11 83 ?? 01 00 00 EB AD E8
 directedit:90 90 90 90 90 90 90 90
 
-1.19.11
+1.19.51
 //once these are set just write to MPLPLBlockXYZ accordingly, and then MPLPLBlockEntAir to 0(0=block,1=ent,3=air)
 Builder:
 nummodaddies:4
-MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2
+MPLPLBlockXY:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 92
 directedit:90 90 90 90 90
-MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2 +08
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 92 +08
 directedit:90 90 90
-MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 C2
+MPLPLBlockEntAir:89 41 18 0F B6 42 1C 88 41 1C F2 0F 10 42 20 ?? ?? ?? ?? ?? 8B 42 28 ?? ?? ?? 8B 42 2C 89 41 2C 8B 42 30 89 41 30 8B 42 34 48 83 C2 38 89 41 34 48 83 C1 38 E8 92
 directedit:90 90 90
 MPLPLBlockEntAirFarCheck:C7 40 18 03 00 00 00 48 8B 8D
 directedit:90 90 90 90 90 90 90
 
-1.19.11
+1.19.51
 //Just check chestslot for elytra wings and then set a multiplier and multiply that times xyz velocity at the hold of a hotkey
 ElytraFly:
 
-1.19.11
+1.19.51
 //swap endianness on the speeds to get the right hex bytes
 FastLadder:
 nummodaddies:2
-LadderUp:C7 81 ?? ?? 00 00 CD CC 4C 3E C3 CC CC CC CC CC C7
-directedit:C7 81 F4040000 [ladderupspeed]
-LadderDown:41 C7 46 04 CDCC4CBE 49 8B ?? 24 49 8B CC FF 90 B0020000 84 C0 74 55
-directedit:41 C7 46 04 [ladderdownspeed]
+LadderUp:C7 40 ?? CDCC4C3E    48 83 C4 28    C3
+directedit:C7 40 1C [ladderupspeed]
+LadderDown:41 C7 47 04 CDCC4CBE    49 8B 06    49 8B CE    48 8B 80 C0020000    FF 15 9EEF1702
+directedit:41 C7 47 04 [ladderdownspeed]
 
 1.18.12
 FastPlace:80 7B 51 00 74 73 +03
@@ -308,7 +308,7 @@ alloc:80 B8 C0 09 00 00 01
 numnops:2
 nopsequence:nop 2
 
-1.19.11
+1.19.51
 //rbx+40,44,48 is x,y,z respectively
 //the first addy extracts rbx in the newmem
 //to access it read newmemaddy+0x64 into uintptr
@@ -318,14 +318,14 @@ nummodaddies:3
 FCOCamX:40
 FCOCamY:44
 FCOCamZ:48
-CamXWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44
+CamXWriter:F3 44 0F 11 6B 40
 alloc:48 89 1D 5D000000 jmpret
-numnops:0
-nopsequence:nan
-CamYWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44 +11
-directedit:90 90 90 90 90
-CamZWriter:F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 ?? F3 0F11 43 ?? F3 0F10 44 24 44 +22
-directedit:90 90 90 90 90
+numnops:1
+nopsequence:nop
+CamYWriter:F3 44 0F 11 73 44
+directedit:90 90 90 90 90 90
+CamZWriter:F3 44 0F 11 7B 48
+directedit:90 90 90 90 90 90
 
 1.19.51
 FullBright:F3 0F 10 42 ?? 48 83 C4 28 C3 41 B8 2F 00 00 00
@@ -333,19 +333,19 @@ alloc:F3 0F10 42 18 C7 42 18 0000C842 jmpret
 numnops:0
 nopsequence:nan
 
-1.19.11
+1.19.51
 //alternatively just set LPVelY to jumpheight(currently just using this method)
-HighJump:F3 0F 11 43 1C 48 8B 07
-alloc:C7 43 1C [jumpheight] jmpret
+HighJump:F3 0F 11 43 04 48 8B 81
+alloc:C7 43 04 [jumpheight] jmpret
 numnops:0
 nopsequence:nan
 
-1.19.11
+1.19.51
 //adjustable hit reach. static address. just set value via memcpy(hitreachAddress,&hitreachmodifier,sizeof(DWORD))
 HitReach:00 00 40 40 DB 0F
 directedit:[hitreachmodifier]
 
-1.19.11
+1.19.51
 //to find just search Minecraft.Windows.exe module for 5.700000000 it's a static address and should pop up with only one result on first scan
 //adjustable block reach. static address. just set value via memcpy(blockreachAddress,&blockreachmodifier,sizeof(DWORD))
 BlockReach:66 66 B6 40
@@ -362,7 +362,7 @@ nopsequence:nop 3
 HBHeight:F3 0F 58 8B ?? 04 00 00 F3 0F 10 10
 directedit:90 90 90 90 90 90 90 90
 
-1.19.11
+1.19.51
 //Just set LPGameMode to 1
 HRIB:
 
@@ -370,12 +370,12 @@ HRIB:
 InstantBreak:F3 0F 11 4B ?? 48 8B 45 ?? 48 39 43 ?? 0F 8D ?? ?? ?? ?? 48 69 8B
 directedit:F3 0F11 73 24
 
-1.18.12
+1.19.51
 Jetpack:
 nummodaddies:2
-LPFlyingWriter:0F B6 40 ?? C3 CC CC CC CC CC CC CC CC CC 4C 8B 49
-directedit:90 90 90 90
-LeapVelocityWriter:F3 0F 11 88 ?? 07 00 00 C3 CC CC CC 48 8B 41 ?? F3 0F 10 80 ?? ?? 00 00 C3 CC CC CC 48 83
+LPFlyingWriter:89 41 70 0F B6 42 74 88 41 74 0F B6 42 78
+directedit:90 90 90
+LeapVelocityWriter:F3 0F 11 88 44 07 00 00
 directedit:90 90 90 90 90 90 90 90
 
 1.17.11
@@ -383,12 +383,12 @@ directedit:90 90 90 90 90 90 90 90
 MouseControl:00 75 16 48 8B CB E8 ?? ?? ?? ?? 84 C0
 directedit:01
 
-1.19.11
+1.19.51
 MPLPLBlockControl:
 nummodaddies:2
-MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2
+MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 92
 directedit:90 90 90 90 90
-MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 C2 +08
+MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 92 +08
 directedit:90 90 90
 
 1.17.11
@@ -403,31 +403,31 @@ alloc:C7 01 00000000 39 01 0F84 +1EEC09A] jmpret
 numnops:3
 nopsequence:nop 3
 
-1.19.11
+1.19.51
 NoLevitate:43 39 04 08 4B 8D 0C 08 75 ?? 33 C9 48 85 C9 0F95 C0 C3 CC CC CC CC CC
-alloc:43 C7 04 08 0000000043 39 04 08 4B 8D 0C 08 jmpret
+alloc:43 C7 04 08 00000000    43 39 04 08    4B 8D 0C 08 jmpret
 numnops:3
 nopsequence:nop 3
 
-1.19.11
+1.19.51
 NoNausea:39 01 74 ?? 48 85 C9 75 ?? F3 0F10 87 ????0000
-alloc:C7 01 00000000 39 01 0F84 +1437B09] 48 85 C9 jmpret
+alloc:C7 01 00000000    39 01    0F84 +E63298]    48 85 C9 jmpret
 numnops:2
 nopsequence:nop 2
 
-1.19.11
+1.19.51
 NoSlowFall:39 10 74 ?? 44 38 60 ?? 75 ?? 48 83 E8 ?? 48 3B C1
-alloc:C7 00 00000000 39 10 0F84 +2006B3A] 44 38 60 1B jmpret
+alloc:C7 00 00000000    39 10    0F84 +1A449BA]    44 38 60 1B jmpret
 numnops:3
 nopsequence:nop 3
 
-1.19.11
-//just nop 'em and then set LPInWater and LPUnderWater
+1.19.51
+//just nop 'em and then set LPInWater and LPUnderWater to 0
 NoWater:
 nummodaddies:2
-NoWaterIW:88 83 5E 02 00 00
+NoWaterIW:88 83 FE 01 00 00 48 8B
 directedit:90 90 90 90 90 90
-NoWaterUW:88 83 60 02 00 00 E8 ?? ?? ?? ?? 0F
+NoWaterUW:88 83 00 02 00 00 83
 directedit:90 90 90 90 90 90
 
 1.18.12
@@ -438,7 +438,7 @@ directedit:EB 26
 RapidHit:80 7B ?? 00 74 ?? 85 FF 0F85 ??000000
 directedit:01
 
-1.19.11
+1.19.51
 Scaffold:88 41 ?? F2 0F 10 42 ?? F2 0F 11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 ?? ?? ?? ?? 0F B6 43 ??
 directedit:90 90 90
 
@@ -477,27 +477,27 @@ nopsequence:nan
 Zoom:F3 0F 10 48 ?? F3 0F 10 78 ?? F3 0F 10 40 ??
 directedit:90 90 90 90 90
 
-1.19.11
+1.19.51
 NopEnterKeySendMessage:E8 ?? ?? ?? ?? 40 88 AB EC
 directedit:90 90 90 90 90
 
-1.19.11
+1.19.51
 NopButtonSendMessage:E8 ?? ?? ?? ?? 48 8B 13 0F 57 C0 F3 0F
 directedit:90 90 90 90 90
 
 //registry extractions area:
 
-1.19.11
+1.19.51
 ExtractWalkSpeed:7C 8B 87 84 00 00 00 89 83 84 00 00 00 8B 47 7C 89 43 7C 8B 87 +01
 alloc:8B 87 84000000  48 89 3D 57000000 jmpret
 numnops:1
 nopsequence:nop
 
-1.19.11
-ExtractLocalPlayer:48 8B 01 FF 90 ?? ?? 00 00 48 8B C8 E8 ?? ?? ?? ?? 48 8B 08 E8 ?? ?? ?? ?? 48 89 83 88010000 48 8D 83 80010000 C7 83 80010000 01000000 48 8B 5C 24 30 48 83 C4 20 5F C3 83 F9 01
-alloc:48 8B 01  48 89 0D 5A000000  FF 90 08050000 jmpret
-numnops:4
-nopsequence:nop 4
+1.19.51
+ExtractLocalPlayer:48 8B 01 48 8B 80 38 ?? 00 00 FF 15 ?? ?? ?? ?? 84 C0 48 8D 05
+alloc:48 89 0D F90F0000    48 8B 01    48 8B 80 38070000 jmpret
+numnops:5
+nopsequence:nop 5
 
 1.19.51
 ExtractLookAtTileData:8B 44 24 48 83 C0 FE 83 F8 01 76 ?? ?? 8B ?? E8 ?? ?? ?? ?? 84 C0 75
