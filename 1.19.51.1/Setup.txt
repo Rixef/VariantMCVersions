@@ -488,16 +488,28 @@ directedit:90 90 90 90 90
 //registry extractions area:
 
 1.19.51
-ExtractWalkSpeed:7C 8B 87 84 00 00 00 89 83 84 00 00 00 8B 47 7C 89 43 7C 8B 87 +01
-alloc:8B 87 84000000  48 89 3D 57000000 jmpret
-numnops:1
-nopsequence:nop
-
-1.19.51
 ExtractLocalPlayer:48 8B 01 48 8B 80 38 ?? 00 00 FF 15 ?? ?? ?? ?? 84 C0 48 8D 05
 alloc:48 89 0D F90F0000    48 8B 01    48 8B 80 38070000 jmpret
 numnops:5
 nopsequence:nop 5
+
+1.19.51
+ExtractPitchYaw:F2 0F 11 40 0C 89 48 18
+alloc:48 A3 6400D23BF77F0000F2 0F11 40 0C        
+numnops:0
+nopsequence:nan
+
+1.19.51
+ExtractTPXYZ:0F 10 00 0F 11 45 C8 F2
+alloc:48 A3 6400DB3BF77F0000    0F10 00    0F11 45 C8 jmpret
+numnops:2
+nopsequence:nop 2
+
+1.19.51
+ExtractWalkSpeed:7C 8B 87 84 00 00 00 89 83 84 00 00 00 8B 47 7C 89 43 7C 8B 87 +01
+alloc:8B 87 84000000  48 89 3D 57000000 jmpret
+numnops:1
+nopsequence:nop
 
 1.19.51
 ExtractLookAtTileData:8B 44 24 48 83 C0 FE 83 F8 01 76 ?? ?? 8B ?? E8 ?? ?? ?? ?? 84 C0 75
@@ -535,11 +547,11 @@ alloc:48 A3 6400B440F77F0000    0F2F 80 84000000 jmpret
 numnops:2
 nopsequence:nop 2
 
-1.19.11
+1.19.51
 //rdi+10
 //24 = chatOpen 25 = escapeMenuOpen 29 = inventoryOpen 31 = chestOpen
 //anything > 0 = a menu is open
-ExtractMenuTypeOpen:48 89 77 ?? 48 89 77 ?? 49 8B D0 48 8B CF E8 ???????? 90 49 8D 5F ?? 48 89 33
+ExtractMenuTypeOpen:48 89 77 ?? 48 89 77 ?? 49 8B D0 48 8B CF E8 ???????? 90 49 8D
 alloc:48 89 3D 5D000000    48 89 77 10    48 89 77 18 jmpret
 numnops:3
 nopsequence:nop 3
