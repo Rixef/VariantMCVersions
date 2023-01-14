@@ -223,12 +223,17 @@ ItemMaxDurability:120
 ItemAttackDamage:228
 ItemProtectionLevel:22C
 
-1.19.11
+1.19.51
 StaticTileVTables:
-WaterTileVTable:Minecraft.Windows.exe+410D5B8
-DirtTileVTable:Minecraft.Windows.exe+40EEAF0
-GrassTileVTable:Minecraft.Windows.exe+40C0898
-SoulSandTileVTable:Minecraft.Windows.exe+41298E0
+GrassTileVTable:Minecraft.Windows.exe+464E790
+DirtTileVTable:Minecraft.Windows.exe+4691320
+GlassTileVTable:Minecraft.Windows.exe+464FFB0
+LiquidTileVTable:Minecraft.Windows.exe+467BE98
+SoulSandTileVTable:Minecraft.Windows.exe+469C6B0
+PlanksTileVTable:Minecraft.Windows.exe+46B3800
+IcePackedIceTileVTable:Minecraft.Windows.exe+4675780
+BlueIceTileVTable:Minecraft.Windows.exe+4639E00
+
 
 1.19.11
 //just write 1 to LPOnGround consistently
@@ -377,11 +382,6 @@ LPFlyingWriter:89 41 70 0F B6 42 74 88 41 74 0F B6 42 78
 directedit:90 90 90
 LeapVelocityWriter:F3 0F 11 88 44 07 00 00
 directedit:90 90 90 90 90 90 90 90
-
-1.17.11
-//used for ClickGUI and sheezy; gives you control of the mouse even when escape menu or inventory or anything is not open
-MouseControl:00 75 16 48 8B CB E8 ?? ?? ?? ?? 84 C0
-directedit:01
 
 1.19.51
 MPLPLBlockControl:
@@ -551,21 +551,8 @@ numnops:4
 nopsequence:nop 4
 
 1.17.11
-ExtractSoundListener:0F 11 06 41 0F 10 4E ?? 0F 11 4E ?? 4C 89 7B D8
-alloc:0F11 06 41 0F10 4E 10 48 89 35 21000000 jmpret
-numnops:3
-nopsequence:nop 3
-
-1.17.11
 //r13(reg extraction) + 0x60 byte value != 0 means chat is open
 ExtractChatOpen:41 89 7D ?? 45 88 A5 ?? ?? 00 00
 alloc:41 89 7D 60 45 88 A5 3C010000 4C 89 2D 1E000000 jmpret
 numnops:6
 nopsequence:nop 6
-
-1.17.11
-//
-ExtractAirTile:48 8B 01 4D 8B C4 48 89 54 24 ?? 49 8D 94 24 ?? 00 00 00
-alloc:48 8B 01 48 89 0D 26000000 4D 8B C4 jmpret
-numnops:1
-nopsequence:nop
