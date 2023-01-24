@@ -235,36 +235,54 @@ IcePackedIceTileVTable:Minecraft.Windows.exe+4675780
 BlueIceTileVTable:Minecraft.Windows.exe+4639E00
 
 
-1.19.11
-//just write 1 to LPOnGround consistently
-AirJump:88 90 D8 01 00 00 C3
-alloc:C7 80 E0010000 01000000 jmpret
+1.19.51
+//alternatively just write 1 to LPOnGround consistently
+AirJump:88 90 88 01 00 00 C3
+alloc:C7 80 88010000 01000000 jmpret
 numnops:1
 nopsequence:nop
 
-1.19.11
+1.19.51
+//AirSwim and NoWater use the same nop writers, just set LPInWater and LPUnderWater to 1 for AirSwim and 0 for NoWater
 AirSwim:
 nummodaddies:2
-InWater:88 83 5E 02 00 00
+InWater:88 83 FE 01 00 00 48 8B
 directedit:90 90 90 90 90 90
-UnderWater:88 83 60 02 00 00 E8 ?? ?? ?? ?? 0F
-directedit:90 90 90 90 90 90
-
-1.19.11
-NoKB:FF 90 70 01 00 00 C6 47 11 01 48 8B 5C 24 30 48 83 C4 20 5F C3
+UnderWater:88 83 00 02 00 00 83
 directedit:90 90 90 90 90 90
 
-1.19.11
-AutoAttack:83 FF 01 75 69 40 +02
-directedit:00
+1.19.51
+//just nop 'em and then set LPInWater and LPUnderWater to 0
+NoWater:
+nummodaddies:2
+NoWaterIW:88 83 FE 01 00 00 48 8B
+directedit:90 90 90 90 90 90
+NoWaterUW:88 83 00 02 00 00 83
+directedit:90 90 90 90 90 90
 
-1.19.11
-AutoPlace:41 83 FE 01 75 68 +03
-directedit:00
+1.19.51
+FastAttack:80 7B ?? 00 74 ?? 45 85 ?? 0F85 ??000000
+directedit:80 7B 54 01
+
+1.19.51
+AutoAttack:41 83 FE 01 75 6E
+directedit:41 83 FE 00
+
+1.19.51
+FastPlace:80 7B 55 00 74 79
+directedit:80 7B 55 01
+
+1.19.51
+AutoPlace:83 FF 01 75 6F 40
+directedit:83 FF 00
 
 1.19.51
 AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF
 directedit:C6 46 48 01
+
+1.19.11
+NoKB:FF 90 70 01 00 00 C6 47 11 01 48 8B 5C 24 30 48 83 C4 20 5F C3
+directedit:90 90 90 90 90 90
 
 1.18.12
 //Once these are set, set a multiplier for boat xyz velocity, also check LPRiding true or false
@@ -300,10 +318,6 @@ LadderUp:C7 40 ?? CDCC4C3E    48 83 C4 28    C3
 directedit:C7 40 1C [ladderupspeed]
 LadderDown:41 C7 47 04 CDCC4CBE    49 8B 06    49 8B CE    48 8B 80 C0020000    FF 15 9EEF1702
 directedit:41 C7 47 04 [ladderdownspeed]
-
-1.18.12
-FastPlace:80 7B 51 00 74 73 +03
-directedit:01
 
 1.18.2
 //different modes, by default just set LPCanFly to 1
@@ -371,10 +385,6 @@ directedit:90 90 90 90 90 90 90 90
 //Just set LPGameMode to 1
 HRIB:
 
-1.18.12
-InstantBreak:F3 0F 11 4B ?? 48 8B 45 ?? 48 39 43 ?? 0F 8D ?? ?? ?? ?? 48 69 8B
-directedit:F3 0F11 73 24
-
 1.19.51
 Jetpack:
 nummodaddies:2
@@ -390,12 +400,6 @@ MPLPLBlockX:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 
 directedit:90 90 90 90 90
 MPLPLBlockZ:F2 0F11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 92 +08
 directedit:90 90 90
-
-1.17.11
-NoBadOmen:44 39 3C 06 74 15
-alloc:C7 04 30 00000000 0F84 +1DF1A53] jmpret
-numnops:1
-nopsequence:nop
 
 1.19.11
 NoBlind:39 01 0F84 ????0000 48 85 C9 0F84 ????0000 48 8B ?? ?? ?? 00 00
@@ -421,22 +425,9 @@ alloc:C7 00 00000000    39 10    0F84 +1A449BA]    44 38 60 1B jmpret
 numnops:3
 nopsequence:nop 3
 
-1.19.51
-//just nop 'em and then set LPInWater and LPUnderWater to 0
-NoWater:
-nummodaddies:2
-NoWaterIW:88 83 FE 01 00 00 48 8B
-directedit:90 90 90 90 90 90
-NoWaterUW:88 83 00 02 00 00 83
-directedit:90 90 90 90 90 90
-
 1.18.12
 NoWeb:75 ?? F3 0F10 02 F3 41 0F11 01 8B 42 ?? 41 89 41 ?? F3 0F10 42 ?? C7 81 ????0000 00000000 F3 41 0F11 41 ?? C3
 directedit:EB 26
-
-1.19.11
-RapidHit:80 7B ?? 00 74 ?? 85 FF 0F85 ??000000
-directedit:01
 
 1.19.51
 Scaffold:88 41 ?? F2 0F 10 42 ?? F2 0F 11 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 89 41 ?? 8B 42 ?? 48 83 C2 38 89 41 ?? 48 83 C1 38 E8 ?? ?? ?? ?? 0F B6 43 ??
@@ -455,26 +446,14 @@ alloc:B8 FF000000  C3 jmpret
 numnops:0
 nopsequence:nan
 
-1.17.11
-WaterBob:F3 41 0F 11 4F 04 F3 41 0F 59
-alloc:41 C7 47 04 [watervelyspeed] jmpret
-numnops:1
-nopsequence:nop
-
-1.19.11
+1.19.51
 //just press a hotkey to make a waypoint by storing
-//LPXYZ 1&2(24bytes)
+//TPXYZ 1&2(24bytes)
 Waypoints:
 
-1.17.12
-WebFloat:F3 0F 11 48 1C F3 0F 10 05 ? ? ? ? F3 0F 11 40 20 48 8B 06 48 8D
-alloc:C7 40 1C [webvelyspeed] jmpret
-numnops:0
-nopsequence:nan
-
-1.17.11
-//for zoomx2 also change LPFOV
-Zoom:F3 0F 10 48 ?? F3 0F 10 78 ?? F3 0F 10 40 ??
+1.19.51
+//for zoomx2 also change LPFOV to 100
+Zoom:F3 0F 10 48 ?? F3 0F 10 70 ?? F3 0F 10 40 ??
 directedit:90 90 90 90 90
 
 1.19.51
@@ -532,6 +511,12 @@ nopsequence:nop
 1.18.12
 ExtractEntityListv3:8B 41 10 44 8B C0 41 81 E0 FF FF 0F 00 49 8B ?? ????0000 49 8B ?? ????0000 48 2B D1 48 C1 FA 02 4C 3B C2 0F83 ????0000 42 39 04 81 0F85 AB000000
 alloc:8B 41 10    48 89 0D 5A000000    44 8B C0 jmpret
+numnops:1
+nopsequence:nop
+
+1.19.51
+ExtractEntityListv4:89 8B 40 01 00 00 8B 48 04 89 8B 44 01 00 00 8B 40
+alloc:48 89 1D 5D000000    89 8B 40010000 jmpret
 numnops:1
 nopsequence:nop
 
