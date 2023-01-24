@@ -280,8 +280,8 @@ directedit:83 FF 00
 AutoSneak:80 7E 48 00 0F84 ??000000 48 8B 07 48 8B CF
 directedit:C6 46 48 01
 
-1.19.11
-NoKB:FF 90 70 01 00 00 C6 47 11 01 48 8B 5C 24 30 48 83 C4 20 5F C3
+1.19.51
+NoKB:FF 15 C0 29 20 03
 directedit:90 90 90 90 90 90
 
 1.18.12
@@ -473,10 +473,10 @@ numnops:5
 nopsequence:nop 5
 
 1.19.51
-ExtractPitchYaw:F2 0F 11 40 0C 89 48 18
-alloc:48 A3 6400D23BF77F0000F2 0F11 40 0C        
-numnops:0
-nopsequence:nan
+ExtractPitchYaw:F3 44 0F 5C 97 BC 00 00 00
+alloc:48 89 3D 5D000000    F3 44 0F5C 97 BC000000 jmpret
+numnops:4
+nopsequence:nop 4
 
 1.19.51
 ExtractTPXYZ:0F 10 00 0F 11 45 C8 F2
@@ -496,21 +496,9 @@ alloc:8B 44 24 48    83 C0 FE    4C 89 35 56000000 jmpret
 numnops:2
 nopsequence:nop 2
 
-1.18.2
-ExtractEntityList:8B 43 10 44 8B C0 41 81 E0 FFFF0F00 4C 8B 49 48 48 8B 51 50 49 2B D1 48 C1 FA 02 4C 3B C2 73 16 43 39 04 81 75 10 48 8D 54 24 20 89 44 24 20
-alloc:8B 43 10    48 89 1D 5A000000    44 8B C0 jmpret
-numnops:1
-nopsequence:nop
-
-1.18.2
-ExtractEntityListv2:8B 43 10 44 8B C0 41 81 E0 FFFF0F00 4C 8B 49 48 48 8B 51 50 49 2B D1 48 C1 FA 02 4C 3B C2 73 18 43 39 04 81 75 12 48 8D 54 24 20
-alloc:8B 43 10    48 89 1D 5A000000    44 8B C0 jmpret
-numnops:1
-nopsequence:nop
-
-1.18.12
-ExtractEntityListv3:8B 41 10 44 8B C0 41 81 E0 FF FF 0F 00 49 8B ?? ????0000 49 8B ?? ????0000 48 2B D1 48 C1 FA 02 4C 3B C2 0F83 ????0000 42 39 04 81 0F85 AB000000
-alloc:8B 41 10    48 89 0D 5A000000    44 8B C0 jmpret
+1.19.51
+ExtractLPVelocity:F3 44 0F 10 50 1C
+alloc:48 A3 64000745F67F0000 jmpret
 numnops:1
 nopsequence:nop
 
@@ -546,10 +534,3 @@ ExtractChatInput:FC 10 73 14 41 0F 10 07 0F 11 44 24 50 +04
 alloc:41 0F10 07 4C 89 3D 59000000 0F11 44 24 50 jmpret
 numnops:4
 nopsequence:nop 4
-
-1.17.11
-//r13(reg extraction) + 0x60 byte value != 0 means chat is open
-ExtractChatOpen:41 89 7D ?? 45 88 A5 ?? ?? 00 00
-alloc:41 89 7D 60 45 88 A5 3C010000 4C 89 2D 1E000000 jmpret
-numnops:6
-nopsequence:nop 6
